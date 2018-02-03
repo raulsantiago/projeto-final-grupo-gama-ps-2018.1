@@ -1,3 +1,5 @@
+<%= render "layouts/header" %> 
+
 <p id="notice"><%= notice %></p>
 <p>
   <strong>Nome:</strong>
@@ -19,6 +21,6 @@
 
 <button><%= link_to 'Cadastrar Cargo', new_office_path %></button>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Edit', edit_user_path(@user) %>
 <%= link_to 'Destroy', destroy_user_path,
- method: :delete, data: { confirm: 'Are you sure?' } %>
+ method: :delete, data: { confirm: 'Você tem certeza?' } %>
