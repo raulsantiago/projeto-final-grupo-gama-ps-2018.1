@@ -1,14 +1,23 @@
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>Nome:</strong>
   <%= @user.name %>
 </p>
-
 <p>
   <strong>E-mail:</strong>
   <%= @user.email %>
 </p>
+<p>Cargos:</p>
+
+
+
+<% @offices.each do |office| %>
+<% if office.user.id == @user.id %>
+  <p><%= office.name_office %></p>
+<% end %>
+<% end %>
+
+<button><%= link_to 'Cadastrar Cargo', new_office_path %></button>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Destroy', destroy_user_path,

@@ -1,0 +1,14 @@
+<p>
+  <strong>Name office:</strong>
+  <%= @office.name_office %>
+</p>
+<p>
+  <strong>Nível da Permission:</strong>
+  <%= @office.permission %>
+</p>
+<p>
+  <strong>User:</strong>
+  <%= @office.user.name %>
+</p>
+<%= link_to 'Edit', edit_office_path(@office) %> |
+<%= link_to 'Back', offices_path %>

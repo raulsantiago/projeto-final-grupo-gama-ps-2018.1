@@ -1,0 +1,15 @@
+<%= form_with(model: office, local: true) do |form| %>
+<%= hidden_field_tag "office[user_id]", current_user.id %>
+  <div class="field">
+    <%= form.label "Nome do Cargo" %>
+    <%= form.text_field :name_office, id: :office_name_office %>
+  </div>
+  <div class="field">
+    <%= form.label :permission %>
+    <%= form.number_field :permission, id: :office_permission %>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+  
+<% end %>

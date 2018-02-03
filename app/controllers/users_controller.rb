@@ -4,16 +4,19 @@ class UsersController < ApplicationController
   before_action :user_logado, only: [:new, :create]
   before_action :user_correto, only: [:edit, :update]
 
-
   # GET /users
   # GET /users.json
   def index
     @users = User.all
+  
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+    @offices1 = Office.where('user_id = ?', @user.id)
+    @offices = Office.all
+    #@offices = Office.new(user_params)
   end
 
   # GET /users/new
