@@ -1,6 +1,14 @@
 <%= form_for @user, url: @user.persisted? ? :edit_user : :new_user do |form| %>
 
-<div class="field">
+<div class="logo-cadastro">
+<%= link_to index_user_path do %>
+  <%= image_tag("logo_header.png")%>
+<% end %>
+</div>
+
+<h1 class="titulo-cadastro">Cadastro</h1>
+<div class= "formulario-cadastro">
+<div class="field-cadastro">
   <% if @user.errors.any? && @user.errors[:name] %>
     <%= form.label "Nome #{@user.errors[:name].first}" %>
   <% else %>
@@ -9,7 +17,7 @@
   <%= form.text_field :name %>
 </div>
 
-<div class="field">
+<div class="field-cadastro">
   <% if @user.errors.any? && @user.errors[:email] %>
     <%= form.label "E-mail #{@user.errors[:email].first}" %>
   <% else %>
@@ -18,7 +26,7 @@
     <%= form.email_field :email %>
 </div>
 
-<div class="field">
+<div class="field-cadastro">
   <% if @user.errors.any? && @user.errors[:password] %>
     <%= form.label "Senha #{@user.errors[:password].first}" %>
   <% else %>
@@ -27,7 +35,7 @@
     <%= form.password_field :password %>
 </div>
 
-<div class="field">
+<div class="field-cadastro">
   <% if @user.errors.any? && @user.errors[:password_confirmation] %>
     <%= form.label "Confirmação de Senha #{@user.errors[:password_confirmation].first}" %>
   <% else %>
@@ -36,12 +44,13 @@
     <%= form.password_field :password_confirmation %>
 </div>
 
-<div class="actions">
+<div class="actions-cadastro">
   <% if @user.persisted? %>
     <%= form.submit "Atualizar" %>
   <% else %>
     <%= form.submit "Cadastrar" %>
   <% end %>
+</div>
 </div>
 
 <% end %>
