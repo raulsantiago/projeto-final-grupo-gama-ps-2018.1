@@ -2,8 +2,12 @@ Rails.application.routes.draw do
 
   resources :offices
   root to: "users#index"
-
   #resources :users
+
+  # Redefinir senha controller
+  get 'redefine_password/search', to: "redefine_password#search", as: :redefine_password
+  post 'redefine_password/search', to: "redefine_password#recuperar"
+
 
   # Offices controller
   post 'offices/new', to: "offices#create"
