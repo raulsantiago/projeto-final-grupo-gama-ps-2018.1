@@ -1,0 +1,6 @@
+<h1>Editing User</h1>
+
+<%= render 'form', user: @user %>
+
+<%= link_to "Todos os Usurários", index_user_path %>
+<%= link_to "Excluir", destroy_user_path(id: @user.id), method: :delete  %>
