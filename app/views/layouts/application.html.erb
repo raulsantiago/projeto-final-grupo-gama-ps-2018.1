@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Projeto Final Gama</title>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
+    
+
     <% if logged_in? %>
     <p>
       <%= link_to current_user.name, show_user_path(id: current_user.id) %>
@@ -15,8 +16,11 @@
 
     <% end %>
       <%= render "layouts/notice" %>
+
     <%= yield %>
+
     <%= render "layouts/footer" %>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>

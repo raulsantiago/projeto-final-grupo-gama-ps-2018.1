@@ -1,16 +1,29 @@
-<h1>Login</h1>
-
 <%= form_for :session, url: :login do |form| %>
 
-  <%= form.label "E-mail" %>
-  <%= form.email_field :email %>
 
-  <%= form.label "Senha" %>
-  <%= form.password_field :password %>
+<div class="logo-login">
+<%= link_to index_user_path do %>
+  <%= image_tag("logo_header.png")%>
+  
+<% end %>
 
-  <%= form.submit "Entrar" %>
+</div>
+<h1 class="titulo-login">Faça seu Login</h1>
+  <section id ="login">
+      
+    <div class= "box-login">
+      
+      <h2>Email (@injunior.com.br): </h2>
+      <%= form.email_field :email, class: "input-login", id: "login" %>
 
-  <button><%= link_to 'Esqueceu sua Senha ?', "redefine_password/search" %></button>
+      <h3>Senha:</h3>
+      <%= form.password_field :password, class: "input-login", id: "senha" %>
+      <%= form.submit "Entrar", class:"botao-login"%>
 
+      <li><%= link_to "Esqueceu sua Senha?", "redefine_password/search" %></li>
+      <li class="link-cadastro" ><%= link_to "Deseja se Cadastrar?", new_user_path %></li>
+    </div>
+  </section>
 
 <% end %>
+

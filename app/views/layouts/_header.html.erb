@@ -1,10 +1,22 @@
-<head>
-  <p>
-     <p><%= link_to "Login", index_user_path %></p>
-     <p><%= link_to "Cadastre novo membro", new_user_path %></p>
-     <p><%= link_to "Membros", index_user_path %></p>
-		 <p><%= link_to "Projetos", index_user_path %></p>
-     <p><%= link_to "Metas", index_user_path %></p>
-     <p><%= link_to "Times", index_user_path %></p>
-  </p>
+
+<header class="header">
+  			<div class="container">
+          <%= link_to index_user_path do %>
+            <%= image_tag("logo_header.png")%>
+  				<% end %>
+  				  <nav class="header_menu">
+  					<ul>	  
+            <li><%= link_to "Perfil", index_user_path %></li>
+            <li><%= link_to "Projetos", index_user_path %></li>
+            <li><%= link_to "Membros", index_user_path %></li>
+            <li><%= link_to "Times", index_user_path %></li>
+            <li><%= link_to "Diretoria", index_user_path %></li>
+            <li><%= link_to "Metas", index_user_path %></li>
+  					</ul>
+  				</nav>
+  			</div>
 </header>
+
+   
+
+  
