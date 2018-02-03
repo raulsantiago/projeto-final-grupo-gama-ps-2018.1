@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :teams
   resources :offices
   root to: "users#index"
   #resources :users
