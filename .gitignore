@@ -6,12 +6,7 @@
 
 # Ignore bundler config.
 /.bundle
-<<<<<<< HEAD
-    
-=======
 
-
->>>>>>> b894ab58cebaa60c662aec802ff3d102753c22ff
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*

@@ -1,0 +1,103 @@
+
+//<%= render 'layouts/header' %>
+*{
+  margin: 0;
+}
+
+/*-------------------CAMPOS DO LOGO LOGIN-----------------*/
+
+.logo-login img {
+
+  height: 100px;
+  display: block;
+  margin: 50px auto;
+  }
+
+body{
+  background-color: #191932;
+}
+
+/*-------------------CAMPOS DO BOX LOGIN-----------------*/
+
+.box-login{
+  height: 325px;
+  max-width: 400px;
+  background-color: #ededed;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ededed;
+  border-radius: 5px;
+  margin: 100px auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+
+.box-login h2{  
+  font-family: sans-serif;
+  padding-top: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 70px;
+  font-size: 15px;
+  color: black;
+}  
+
+.box-login h3{
+  font-family: sans-serif;
+  margin-bottom:5px;
+  padding-left: 70px;
+  font-size: 15px;
+
+  color: black;
+}
+
+.input-login{
+  
+  margin: 0 auto 20px auto;
+  display: block;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  height: 30px;
+  padding: 0 15px;
+  border-radius: 3px;
+  
+}
+
+/*-------------------CAMPOS DO BOTAO LOGIN-----------------*/
+
+.botao-login{
+  margin: 0 auto 20px auto;
+  display: block;
+  margin-top: 50px;
+  background-color: #132A57;
+  border-radius: 3px;
+  text-decoration: none;
+  border-color: #132A57;
+  text-align: center;
+  height: 30px;
+  width: 260px;
+  color: #ededed;
+  border: solid 1px;
+}
+.botao-login:hover{
+  background-color: #aaaee4;
+  transition: 0.3s;
+  border: solid 1px;
+  border-color: #aaaee4;
+  color:#132A57
+}
+
+
+/*-------------------CAMPOS DO RECUPERAÇÃO DE SENHA-----------------*/
+
+.box-login li{
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 12px;
+}
+.box-login li a{
+  text-decoration: none;
+  color: black;
+}
