@@ -7,13 +7,13 @@
   <body>
     
 
-    <% if logged_in? %>
+    
+<% if logged_in? %>
+    <%= render "layouts/header" %> 
     <p>
-      <%= link_to current_user.name, show_user_path(id: current_user.id) %>
-      <%= link_to "Logout", logout_path, method: :delete %>
+      <%= link_to current_user.name, show_user_path(id: current_user.id) %>  
     </p>
     <% else %>
-
     <% end %>
       <%= render "layouts/notice" %>
 
