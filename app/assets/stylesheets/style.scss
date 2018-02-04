@@ -16,10 +16,12 @@
 body{
   background-color: #191932;
   overflow-x: hidden;
+  max-height: 100%;
 }
 
 /*-------------------CAMPOS DO TITULO LOGIN-----------------*/
 .titulo-login{
+font-family: Linux Libertine;  
 padding-top: 20px;
 text-align: center;
 color: #ededed;

@@ -1,0 +1,12 @@
+<h1>Esqueceu sua senha ?<h1>
+
+<p>
+  Digite seu email para recuperar:
+</p>
+
+<%= form_for :user, url: :redefine_password do |form| %>
+  <%= form.label "E-mail" %>
+  <%= form.email_field :email %>
+
+  <%= form.submit "Buscar" %>
+<% end %>
