@@ -1,0 +1,82 @@
+<%= form_with(model: projection_goal_float, local: true) do |form| %>
+  <% if projection_goal_float.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(projection_goal_float.errors.count, "error") %> prohibited this projection_goal_float from being saved:</h2>
+
+      <ul>
+      <% projection_goal_float.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :january %>
+    <%= form.text_field :january, id: :projection_goal_float_january %>
+  </div>
+
+  <div class="field">
+    <%= form.label :february %>
+    <%= form.text_field :february, id: :projection_goal_float_february %>
+  </div>
+
+  <div class="field">
+    <%= form.label :march %>
+    <%= form.text_field :march, id: :projection_goal_float_march %>
+  </div>
+
+  <div class="field">
+    <%= form.label :april %>
+    <%= form.text_field :april, id: :projection_goal_float_april %>
+  </div>
+
+  <div class="field">
+    <%= form.label :may %>
+    <%= form.text_field :may, id: :projection_goal_float_may %>
+  </div>
+
+  <div class="field">
+    <%= form.label :june %>
+    <%= form.text_field :june, id: :projection_goal_float_june %>
+  </div>
+
+  <div class="field">
+    <%= form.label :july %>
+    <%= form.text_field :july, id: :projection_goal_float_july %>
+  </div>
+
+  <div class="field">
+    <%= form.label :august %>
+    <%= form.text_field :august, id: :projection_goal_float_august %>
+  </div>
+
+  <div class="field">
+    <%= form.label :september %>
+    <%= form.text_field :september, id: :projection_goal_float_september %>
+  </div>
+
+  <div class="field">
+    <%= form.label :october %>
+    <%= form.text_field :october, id: :projection_goal_float_october %>
+  </div>
+
+  <div class="field">
+    <%= form.label :november %>
+    <%= form.text_field :november, id: :projection_goal_float_november %>
+  </div>
+
+  <div class="field">
+    <%= form.label :december %>
+    <%= form.text_field :december, id: :projection_goal_float_december %>
+  </div>
+
+  <div class="field">
+    <%= form.label :goal_float_id %>
+    <%= form.text_field :goal_float_id, id: :projection_goal_float_goal_float_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
