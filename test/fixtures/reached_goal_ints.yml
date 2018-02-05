@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  january: false
+  february: false
+  march: false
+  april: false
+  may: false
+  june: false
+  july: false
+  august: false
+  september: false
+  october: false
+  november: false
+  december: false
+  goal_int: one
+
+two:
+  january: false
+  february: false
+  march: false
+  april: false
+  may: false
+  june: false
+  july: false
+  august: false
+  september: false
+  october: false
+  november: false
+  december: false
+  goal_int: two

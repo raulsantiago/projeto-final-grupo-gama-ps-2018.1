@@ -9,13 +9,20 @@
 </p>
 <p>Cargos:</p>
 
-
-
 <% @offices.each do |office| %>
 <% if office.user.id == @user.id %>
   <p><%= office.name_office %></p>
 <% end %>
 <% end %>
+
+<p>Membro pertence ao time:</p>
+<%= @user.team.name_team if @user.team_id %>
+
+<%= render "team" %>
+
+
+<button><%= link_to 'Cadastrar Time', new_team_path %></button>
+
 
 <button><%= link_to 'Cadastrar Cargo', new_office_path %></button>
 

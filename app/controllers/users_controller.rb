@@ -4,11 +4,25 @@ class UsersController < ApplicationController
   before_action :user_logado, only: [:new, :create]
   before_action :user_correto, only: [:edit, :update]
 
+  # PATCH buscateams
+  def buscateams
+    team = Team.find_by(id: params[:team])
+    @result = []
+    if team
+      teams.each do |team|
+      @result.append team
+    end
+  end
+      respond_to do |format|
+        format.json { render json: @result }
+    end
+  end
+
+
   # GET /users
   # GET /users.json
   def index
     @users = User.all
-  
   end
 
   # GET /users/1
@@ -16,6 +30,7 @@ class UsersController < ApplicationController
   def show
     @offices1 = Office.where('user_id = ?', @user.id)
     @offices = Office.all
+    @teams = Team.all
     #@offices = Office.new(user_params)
   end
 
@@ -44,6 +59,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+    @user = User.find params[:id]
     if @user.update_attributes(user_params)
       redirect_to show_user_path(id: @user.id)
     else
@@ -66,7 +82,7 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation, :team_id)
   end
 
   def user_correto

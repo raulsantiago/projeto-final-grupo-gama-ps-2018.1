@@ -1,0 +1,2 @@
+module ProgressProjectsHelper
+end

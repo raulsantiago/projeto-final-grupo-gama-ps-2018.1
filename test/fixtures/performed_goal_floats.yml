@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  january: 1.5
+  february: 1.5
+  march: 1.5
+  april: 1.5
+  may: 1.5
+  june: 1.5
+  july: 1.5
+  august: 1.5
+  september: 1.5
+  october: 1.5
+  november: 1.5
+  december: 1.5
+  goal_float: one
+
+two:
+  january: 1.5
+  february: 1.5
+  march: 1.5
+  april: 1.5
+  may: 1.5
+  june: 1.5
+  july: 1.5
+  august: 1.5
+  september: 1.5
+  october: 1.5
+  november: 1.5
+  december: 1.5
+  goal_float: two

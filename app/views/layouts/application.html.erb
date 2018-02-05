@@ -3,6 +3,7 @@
   <head>
     <title>Projeto Final Gama</title>
     <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -18,7 +19,6 @@
       <%= render "layouts/notice" %>
     <%= yield %>
     <%= render "layouts/footer" %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

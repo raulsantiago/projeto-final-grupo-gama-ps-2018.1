@@ -10,6 +10,8 @@ class TeamsController < ApplicationController
   # GET /teams/1
   # GET /teams/1.json
   def show
+    @users = User.all
+    @teams = Team.all
   end
 
   # GET /teams/new
@@ -39,17 +41,16 @@ class TeamsController < ApplicationController
 
   # PATCH/PUT /teams/1
   # PATCH/PUT /teams/1.json
+
   def update
-    respond_to do |format|
-      if @team.update(team_params)
-        format.html { redirect_to @team, notice: 'Team was successfully updated.' }
-        format.json { render :show, status: :ok, location: @team }
-      else
-        format.html { render :edit }
-        format.json { render json: @team.errors, status: :unprocessable_entity }
-      end
+    if @team.update_attributes(team_params)
+      redirect_to team_path(id: @team.id)
+    else
+      render "edit"
     end
   end
+
+
 
   # DELETE /teams/1
   # DELETE /teams/1.json
