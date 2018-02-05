@@ -1,12 +1,17 @@
-<h1>Esqueceu sua senha ?<h1>
+<div class="logo-cadastro">
+<%= link_to index_user_path do %>
+  <%= image_tag("logo_header.png")%>
+<% end %>
+</div>
 
-<p>
-  Digite seu email para recuperar:
-</p>
+<h1 class="titulo-redefsenha">Esqueceu sua senha?<h1>
 
-<%= form_for :user, url: :redefine_password do |form| %>
-  <%= form.label "E-mail" %>
-  <%= form.email_field :email %>
+<div class="container-redefsenha">
+  <p>Digite seu email para recuperar:</p>
 
-  <%= form.submit "Buscar" %>
+  <%= form_for :user, url: :redefine_password do |form| %>
+    <%= form.label "E-mail" %>
+    <%= form.email_field :email %>
+    <%= form.submit "Buscar", class:"botao-redefsenha"%>
+</div>
 <% end %>
