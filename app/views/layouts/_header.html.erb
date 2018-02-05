@@ -1,17 +1,27 @@
 <header class="header">
-  			<div class="container">
+  			<div class="container-header">
           <%= link_to index_user_path do %>
             <%= image_tag("logo_header.png")%>
-  				<% end %>
-  				  <nav class="header_menu">
-  					<ul>
-            <li><%= link_to "Perfil", index_user_path %></li>
-            <li><%= link_to "Projetos", index_user_path %></li>
-            <li><%= link_to "Membros", index_user_path %></li>
-            <li><%= link_to "Times", index_user_path %></li>
-            <li><%= link_to "Diretoria", index_user_path %></li>
-            <li><%= link_to "Metas", index_user_path %></li>
-  					</ul>
-  				</nav>
-  			</div>
+          <% end %>
+        <nav role='navigation'>
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+            <li class="opt-menu"><%= link_to "Perfil", show_user_path(id: current_user.id) %></li>
+            <li class="opt-menu"><%= link_to "Projetos", index_user_path %></li>
+            <li class="opt-menu"><%= link_to "Membros", index_user_path %></li>
+            <li class="opt-menu"><%= link_to "Times", index_user_path %></li>
+            <li class="opt-menu"><%= link_to "Diretoria", index_user_path %></li>
+            <li class="opt-menu"><%= link_to "Metas", index_user_path %></li>
+            <li class="botao-logout"><%= link_to "Logout", logout_path, method: :delete %></li>
+            </ul>
+
+          </div>
+
+        </nav>
+
+    </div>
 </header>
