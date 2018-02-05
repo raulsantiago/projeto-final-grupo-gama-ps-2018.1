@@ -1,0 +1,82 @@
+<%= form_with(model: reached_goal_int, local: true) do |form| %>
+  <% if reached_goal_int.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(reached_goal_int.errors.count, "error") %> prohibited this reached_goal_int from being saved:</h2>
+
+      <ul>
+      <% reached_goal_int.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :january %>
+    <%= form.check_box :january, id: :reached_goal_int_january %>
+  </div>
+
+  <div class="field">
+    <%= form.label :february %>
+    <%= form.check_box :february, id: :reached_goal_int_february %>
+  </div>
+
+  <div class="field">
+    <%= form.label :march %>
+    <%= form.check_box :march, id: :reached_goal_int_march %>
+  </div>
+
+  <div class="field">
+    <%= form.label :april %>
+    <%= form.check_box :april, id: :reached_goal_int_april %>
+  </div>
+
+  <div class="field">
+    <%= form.label :may %>
+    <%= form.check_box :may, id: :reached_goal_int_may %>
+  </div>
+
+  <div class="field">
+    <%= form.label :june %>
+    <%= form.check_box :june, id: :reached_goal_int_june %>
+  </div>
+
+  <div class="field">
+    <%= form.label :july %>
+    <%= form.check_box :july, id: :reached_goal_int_july %>
+  </div>
+
+  <div class="field">
+    <%= form.label :august %>
+    <%= form.check_box :august, id: :reached_goal_int_august %>
+  </div>
+
+  <div class="field">
+    <%= form.label :september %>
+    <%= form.check_box :september, id: :reached_goal_int_september %>
+  </div>
+
+  <div class="field">
+    <%= form.label :october %>
+    <%= form.check_box :october, id: :reached_goal_int_october %>
+  </div>
+
+  <div class="field">
+    <%= form.label :november %>
+    <%= form.check_box :november, id: :reached_goal_int_november %>
+  </div>
+
+  <div class="field">
+    <%= form.label :december %>
+    <%= form.check_box :december, id: :reached_goal_int_december %>
+  </div>
+
+  <div class="field">
+    <%= form.label :goal_int_id %>
+    <%= form.text_field :goal_int_id, id: :reached_goal_int_goal_int_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_project: MyString
+  date_term: 2018-02-04 23:08:30
+  date_completed: 2018-02-04 23:08:30
+  team: one
+  user: one
+
+two:
+  name_project: MyString
+  date_term: 2018-02-04 23:08:30
+  date_completed: 2018-02-04 23:08:30
+  team: two
+  user: two

@@ -1,0 +1,11 @@
+<%= form_for @user, url: @user.persisted? ? :edit_user : :new_user do |form| %>
+
+  <%= form.label "Time" %>
+    <%= select("", "team_id", Team.all.collect {|team| [ team.name_team,
+      team.id ] }, id: :team) %>
+
+    <% if @user.persisted? %>
+      <%= form.submit "Atualizar" %>
+    <% end %>
+
+<% end %>

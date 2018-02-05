@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Reached Goal Floats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>January</th>
+      <th>February</th>
+      <th>March</th>
+      <th>April</th>
+      <th>May</th>
+      <th>June</th>
+      <th>July</th>
+      <th>August</th>
+      <th>September</th>
+      <th>October</th>
+      <th>November</th>
+      <th>December</th>
+      <th>Goal float</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reached_goal_floats.each do |reached_goal_float| %>
+      <tr>
+        <td><%= reached_goal_float.january %></td>
+        <td><%= reached_goal_float.february %></td>
+        <td><%= reached_goal_float.march %></td>
+        <td><%= reached_goal_float.april %></td>
+        <td><%= reached_goal_float.may %></td>
+        <td><%= reached_goal_float.june %></td>
+        <td><%= reached_goal_float.july %></td>
+        <td><%= reached_goal_float.august %></td>
+        <td><%= reached_goal_float.september %></td>
+        <td><%= reached_goal_float.october %></td>
+        <td><%= reached_goal_float.november %></td>
+        <td><%= reached_goal_float.december %></td>
+        <td><%= reached_goal_float.goal_float %></td>
+        <td><%= link_to 'Show', reached_goal_float %></td>
+        <td><%= link_to 'Edit', edit_reached_goal_float_path(reached_goal_float) %></td>
+        <td><%= link_to 'Destroy', reached_goal_float, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reached Goal Float', new_reached_goal_float_path %>

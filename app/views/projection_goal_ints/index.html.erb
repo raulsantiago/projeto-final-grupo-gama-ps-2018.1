@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Projection Goal Ints</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>January</th>
+      <th>February</th>
+      <th>March</th>
+      <th>April</th>
+      <th>May</th>
+      <th>June</th>
+      <th>July</th>
+      <th>August</th>
+      <th>September</th>
+      <th>October</th>
+      <th>November</th>
+      <th>December</th>
+      <th>Goal int</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projection_goal_ints.each do |projection_goal_int| %>
+      <tr>
+        <td><%= projection_goal_int.january %></td>
+        <td><%= projection_goal_int.february %></td>
+        <td><%= projection_goal_int.march %></td>
+        <td><%= projection_goal_int.april %></td>
+        <td><%= projection_goal_int.may %></td>
+        <td><%= projection_goal_int.june %></td>
+        <td><%= projection_goal_int.july %></td>
+        <td><%= projection_goal_int.august %></td>
+        <td><%= projection_goal_int.september %></td>
+        <td><%= projection_goal_int.october %></td>
+        <td><%= projection_goal_int.november %></td>
+        <td><%= projection_goal_int.december %></td>
+        <td><%= projection_goal_int.goal_int %></td>
+        <td><%= link_to 'Show', projection_goal_int %></td>
+        <td><%= link_to 'Edit', edit_projection_goal_int_path(projection_goal_int) %></td>
+        <td><%= link_to 'Destroy', projection_goal_int, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Projection Goal Int', new_projection_goal_int_path %>

@@ -1,0 +1,69 @@
+.container-show{
+
+    height: 120px;
+    max-width: 100%;
+    background-image: url(background-perfil.jpg);
+    padding-bottom: 40%;
+    opacity: 1.0;
+}
+
+.nome-show{
+    text-align: center; 
+    padding-top: 130px;
+}
+.nome-show-usuario{
+    padding-top: 10px;
+    text-align: center;
+}
+.lh1-show{
+    margin: 5px auto;
+    border-color:#aaa;
+    box-sizing:border-box;
+    width:300px;  
+  }
+.lh2-show{
+    margin: 5px auto;
+    border-color:#aaa;
+    box-sizing:border-box;
+    width:300px;  
+}
+.email-show{
+    text-align: center; 
+}
+.email-show-usuario{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.cargos-show{
+    font-weight: bold;
+    text-align: center; 
+}
+.botao-cadastro-cargo{
+
+    margin: 100px auto;
+    display: block;
+    background-color: #838485;
+    border-radius: 3px;
+    text-decoration: none;
+    border-color: #838485;
+    text-align: center;
+    height: 30px;
+    width: 260px; 
+    border: solid 1px;
+}
+.botao-cadastro-alert{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.botao-cadastro-alert2{
+ 
+}
