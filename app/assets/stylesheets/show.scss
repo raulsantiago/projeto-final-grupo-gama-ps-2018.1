@@ -1,0 +1,141 @@
+.container-show{
+
+    height: 130px;
+    max-width: 100%;
+    padding-bottom: 40%;
+    opacity: 1.0;
+}
+
+.nome-show{
+    text-align: center; 
+    padding-top: 40px;
+}
+.nome-show-usuario{
+    padding-top: 10px;
+    text-align: center;
+}
+.lh-show{
+    margin: 5px auto;
+    border-color:#0c3b69;
+    box-sizing:border-box;
+    width:300px;  
+  }
+
+.email-show{
+    text-align: center; 
+}
+.email-show-usuario{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.cargos-show{
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center; 
+}
+.botao-cadastro-cargo{
+
+    margin: 10px auto;
+    display: block;
+    background-color: #0c3b69;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    height: 30px;
+    width: 160px; 
+    border: solid 1px;
+    border: none;
+    padding-top: 10px;
+    color: white;
+    font-size: 14px;
+
+   
+}
+.botao-cadastro-alert{
+    background-color: #d81912; 
+    border: none;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    border: solid 1px;
+    border-color: #838485;
+    font-size: 12px;
+    width: 128px; 
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 45%;
+    color: white;
+    padding-top: 10px;
+}
+.botao-cadastro-alert2{
+    background-color: #d81912; 
+    border: none;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    border: solid 1px;
+    border-color: #838485;
+    font-size: 12px;
+    width: 128px; 
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 45%;
+    color: white;
+    padding-top: 10px;
+}
+
+.cargos-show-usuario{
+    text-align: center;
+}
+
+.titulo-time-show{
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.times-show{
+    padding-top: 10px;
+    text-align: center;
+    margin-left: 45%;
+    
+}
+.botao-atualizar-show{
+    
+    margin: 20px auto;
+    display: block;
+    background-color: #0c3b69;
+    border-radius: 3px;
+    text-decoration: none;
+    border-color: #838485;
+    text-align: center;
+    height: 30px;
+    width: 160px; 
+    border: solid 1px;
+    border: none;
+    
+}
+
+.botao-cadastro-alert a{
+    text-decoration: none;
+    color: #ededed;
+}
+.botao-cadastro-alert2 a{
+    text-decoration: none;
+    color: #ededed;
+}
+
+
+.botao-atualizar-show {
+    text-decoration: none;
+    color:  #ededed;
+}
+.botao-cadastro-cargo {
+    text-decoration: none;
+    color: #ededed;
+}

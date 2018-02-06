@@ -1,29 +1,19 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Users</h1>
-
-<table>
+<div class="container-show-membros">
+<table id="tabela-membros">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Email</th>
+      <th class="coluna-membros">Nome</th>
+      <th class="coluna-membros">E-mail</th>
       <th colspan="2"></th>
     </tr>
   </thead>
-
   <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= user.email %></td>
-        <td><%= link_to 'Show', show_user_path(user) %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', destroy_user_path(user), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+  <% @users.each do |user| %>
+    <tr>
+      <td class="link-tabela-membros"><%= link_to user.name, show_user_path(user) %></td>
+      <td><%= user.email %></td>
+    </tr>
+  <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'Novo Membro', new_user_path %>
+</div>

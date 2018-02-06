@@ -28,11 +28,11 @@ class OfficesController < ApplicationController
     @office = Office.new(office_params)
     respond_to do |format|
       if @office.save
-        format.html { redirect_to "offices/index",
-           notice: 'Office was successfully created.' }
+        format.html { redirect_to @office, notice: 'Cargo criado com exito!' }
+        format.json { render :show, status: :ok, location: @office }
       else
         @user = @office.user
-        format.html { render "offices/index" }
+        format.html { render :create }
         format.json { render json: @office.errors, status: :unprocessable_entity }
       end
     end
@@ -43,7 +43,7 @@ class OfficesController < ApplicationController
   def update
     respond_to do |format|
       if @office.update(office_params)
-        format.html { redirect_to @office, notice: 'Office was successfully updated.' }
+        format.html { redirect_to @office, notice: 'Cargo alterado com exito!' }
         format.json { render :show, status: :ok, location: @office }
       else
         format.html { render :edit }

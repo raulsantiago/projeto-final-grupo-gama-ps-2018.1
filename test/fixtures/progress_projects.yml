@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  origin_unity: MyString
+  destiny_unity: MyString
+  information: MyString
+  date_send: 2018-02-04 23:11:17
+  project: one
+
+two:
+  origin_unity: MyString
+  destiny_unity: MyString
+  information: MyString
+  date_send: 2018-02-04 23:11:17
+  project: two

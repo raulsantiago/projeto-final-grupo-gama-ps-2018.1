@@ -5,7 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+# GEM para criação tabela 
+gem 'jquery-datatables-rails', '~> 3.4.0'
 
 # gerenciamento automatico de imagem
 gem "passgen"

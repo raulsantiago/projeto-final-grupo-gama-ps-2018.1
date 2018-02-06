@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Progress Projects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Origin unity</th>
+      <th>Destiny unity</th>
+      <th>Information</th>
+      <th>Date send</th>
+      <th>Project</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @progress_projects.each do |progress_project| %>
+      <tr>
+        <td><%= progress_project.origin_unity %></td>
+        <td><%= progress_project.destiny_unity %></td>
+        <td><%= progress_project.information %></td>
+        <td><%= progress_project.date_send %></td>
+        <td><%= progress_project.project %></td>
+        <td><%= link_to 'Show', progress_project %></td>
+        <td><%= link_to 'Edit', edit_progress_project_path(progress_project) %></td>
+        <td><%= link_to 'Destroy', progress_project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Progress Project', new_progress_project_path %>

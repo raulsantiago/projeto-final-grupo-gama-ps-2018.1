@@ -1,0 +1,14 @@
+<h1>Relação dos Times</h1>
+
+<% @teams.each do |team| %>
+  <p><%= team.name_team %></p>
+    <% @team = team %>
+
+
+    <% @users.each do |user| %>
+    <% if team.user.id == @user.id %>
+      <p><%= user.name %></p>
+    <% end %>
+    <% end %>
+
+<% end %>

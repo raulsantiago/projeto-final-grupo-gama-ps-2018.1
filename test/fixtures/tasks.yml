@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_tasks: MyString
+  description: MyString
+  sprint: 1
+  project: one
+
+two:
+  name_tasks: MyString
+  description: MyString
+  sprint: 1
+  project: two

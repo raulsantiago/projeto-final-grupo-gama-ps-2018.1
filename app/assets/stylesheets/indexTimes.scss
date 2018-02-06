@@ -1,0 +1,94 @@
+.titulo-index-times{
+    margin-top: 30px;
+    text-align: center;   
+    font-family: sans-serif;
+    padding: 30px;
+}
+
+
+
+.botao-index-show-times{
+
+    background-color: #b92f2a; 
+    border: none;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    border: solid 1.5px;
+    border-color: #838485;
+    font-size: 12px;
+    width: 80px; 
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 45%;
+    color: white;
+    padding: 12px 10px 0 10px;
+}
+
+.botao-index-delete-times{
+
+    background-color: #b92f2a; 
+    border: none;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    border: solid 1px;
+    border-color: #838485;
+    font-size: 12px;
+    width: 60px; 
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 45%;
+    color: white;
+    padding-top: 10px;
+}
+
+.botao-index-show-times {
+    text-decoration: none;
+    color: #ededed;
+}
+
+.botao-index-editar-times {
+    text-decoration: none;
+    color:  #ededed;
+}
+.botao-index-delete-times {
+    text-decoration: none;
+    color: #ededed;
+}
+
+
+.botao-criar-novo-time{
+    background-color: #0c3b69; 
+    border: none;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    border: solid 1px;
+    border-color: #838485;
+    font-size: 12px;
+    width: 128px; 
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 45%;
+    color: white;
+    padding-top: 10px;
+}
+
+.link-tabela-times a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color:#2b2c58;
+}
+
+#tabela-times{
+   
+    width: 50% !important; /*Importante manter o !important rs */
+    margin: auto;
+}

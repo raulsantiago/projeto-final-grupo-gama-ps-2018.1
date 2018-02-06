@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Origin unity:</strong>
+  <%= @progress_project.origin_unity %>
+</p>
+
+<p>
+  <strong>Destiny unity:</strong>
+  <%= @progress_project.destiny_unity %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @progress_project.information %>
+</p>
+
+<p>
+  <strong>Date send:</strong>
+  <%= @progress_project.date_send %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @progress_project.project %>
+</p>
+
+<%= link_to 'Edit', edit_progress_project_path(@progress_project) %> |
+<%= link_to 'Back', progress_projects_path %>
