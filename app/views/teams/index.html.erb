@@ -1,27 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Teams</h1>
+<h1 class="titulo-index-times">Times</h1>
 
-<table>
+<table id="tabela-times">
   <thead>
     <tr>
-      <th>Name team</th>
-      <th colspan="3"></th>
-    </tr>
+      <th></th>
+      <th colspan="1"></th>
+    </tr><br>
   </thead>
-
-  <tbody>
+<div class="box-conulta-times">
+  <tbody class="times-index">
     <% @teams.each do |team| %>
       <tr>
-        <td><%= team.name_team %></td>
-        <td><%= link_to 'Show', team %></td>
-        <td><%= link_to 'Edit', edit_team_path(team) %></td>
-        <td><%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="link-tabela-times"><%= link_to team.name_team, team %></td>
+        <td><%= link_to 'Integrantes', team, class:"botao-index-show-times" %></td>
+        <td><%= link_to 'Delete', team, class:"botao-index-delete-times" ,method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
+</div>
 </table>
 
 <br>
 
-<%= link_to 'New Team', new_team_path %>
+<%= link_to 'New Team', new_team_path, class:"botao-criar-novo-time" %>

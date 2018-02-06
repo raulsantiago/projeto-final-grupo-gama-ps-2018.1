@@ -14,7 +14,18 @@
 
 body{
   background-color: #6060b6;
+<<<<<<< HEAD
   max-height: 100%;
+=======
+  background: -webkit-linear-gradient(top left, rgb(186, 172, 243) 0%, rgb(68, 52, 212) 100%);
+  background: -moz-linear-gradient(top left, #d4d1df 0%, rgb(72, 61, 167) 100%);
+  background: -o-linear-gradient(top left, rgb(192, 189, 204) 0%, rgb(76, 70, 131) 100%);
+  background: linear-gradient(to bottom right, rgb(206, 201, 211) 0%, rgb(43, 35, 128) 100%);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+>>>>>>> master
 }
 
 /*-------------------CAMPOS DO TITULO LOGIN-----------------*/
@@ -44,13 +55,20 @@ font-size: 25px;
 
 
 .box-login h2{
+<<<<<<< HEAD
   font-family: sans-serif;
+=======
+>>>>>>> master
   padding-top: 35px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 70px;
   font-size: 15px;
+<<<<<<< HEAD
   color: #000000;
+=======
+//  color: #000000;
+>>>>>>> master
 }
 
 .box-login h3{
@@ -113,6 +131,7 @@ font-size: 25px;
 }
 .link-cadastro{
   margin-top: 10px;
+<<<<<<< HEAD
 }
 
 /*------------------PÁGINA REDEFINIR SENHA ---------------*/
@@ -269,3 +288,11 @@ font-size: 25px;
 .field-novo-projeto{
   text-align: center;
 }
+=======
+  }
+<<<<<<< HEAD
+=======
+
+ 
+>>>>>>> 70dd3a3336a719a83c3f6cab49a5e886c761a760
+>>>>>>> master

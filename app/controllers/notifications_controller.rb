@@ -1,6 +1,17 @@
 class NotificationsController < ApplicationController
   before_action :set_notification, only: [:show, :edit, :update, :destroy]
 
+  def list
+  #  @notifications.  = current_user
+  #  @user.team_id = params[:team_id]
+  #  @user.save
+  #  redirect_to show_user_path(id: @user.id)    
+  end
+
+
+
+
+
   # GET /notifications
   # GET /notifications.json
   def index
@@ -10,6 +21,7 @@ class NotificationsController < ApplicationController
   # GET /notifications/1
   # GET /notifications/1.json
   def show
+    @user = @user.name
   end
 
   # GET /notifications/new

@@ -11,7 +11,12 @@
 
   <%= form_for :user, url: :redefine_password do |form| %>
     <%= form.label "E-mail" %>
+<<<<<<< HEAD
     <%= form.email_field :email, placeholder: "seuemail@injunior.com.br" %>
     <%= form.button "Buscar", class:"botao-redefsenha"%>
+=======
+    <%= form.email_field :email %>
+    <%= form.submit "Buscar", class:"botao-redefsenha"%>
+>>>>>>> master
 </div>
 <% end %>

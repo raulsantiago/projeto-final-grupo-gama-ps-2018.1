@@ -15,8 +15,13 @@ Rails.application.routes.draw do
   resources :notifications
   resources :teams
   resources :offices
+
+
   root to: "users#index"
-  #resources :users
+
+  # projects controller
+  #get 'projects/index', to: "projects#index"
+
 
   # Redefinir senha controller
   get 'redefine_password/search', to: "redefine_password#search", as: :redefine_password
@@ -45,6 +50,7 @@ Rails.application.routes.draw do
   #patch 'teams/edit/:id', to: "teams#update" #acesaar db para alteração pelo form
 
   patch 'buscateams', to: "users#buscateams", as: :buscateams
+  patch 'users/update_team', to: "users#update_team", as: :edit_team_user
   get 'users/novo', to: "users#new", as: :new_user #novo é nome não é agumento
   post 'users/novo', to: "users#create" #criando no DB
   get 'users/edit/:id', to: "users#edit", as: :edit_user
@@ -52,6 +58,7 @@ Rails.application.routes.draw do
   get 'users/:id', to: "users#show", as: :show_user #id argumento
   delete 'users/:id', to: "users#destroy", as: :destroy_user
   get 'users', to: "users#index", as: :index_user
+
 
 
 end
