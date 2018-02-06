@@ -10,21 +10,21 @@
       </ul>
     </div>
   <% end %>
+  <div class="container-novo-projeto">
+    <div class="field-novo-projeto">
+      <%= form.label "Nome da notificação:" %>
+      <%= form.text_field :name_notification, id: :notification_name_notification %>
+    </div>
 
-  <div class="field">
-    <%= form.label :name_notification %>
-    <%= form.text_field :name_notification, id: :notification_name_notification %>
-  </div>
+    <div class="field-novo-projeto">
+      <%= form.label "Texto:" %>
+      <%= form.text_field :text, :class=>"field-especial-para-textos-grandes" %>
+    </div>
 
-  <div class="field">
-    <%= form.label :text %>
-    <%= form.text_field :text, id: :notification_text %>
-  </div>
-
-  <div class="field">
-    <%= form.label :date_send %>
-    <%= form.datetime_select :date_send, id: :notification_date_send %>
-  </div>
+    <div class="field-novo-projeto">
+      <%= form.label :date_send %>
+      <%= form.datetime_select :date_send, id: :notification_date_send %>
+    </div>
 
   <%= form.label " "%>
     <%= select("", "user_id", User.all.collect {|user| [ user.name,
