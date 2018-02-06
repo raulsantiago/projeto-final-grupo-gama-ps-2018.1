@@ -54,18 +54,35 @@ class UsersController < ApplicationController
         flash.now[:notice] = "Algo errado aconteceu."
         render "new"
     end
+
+    puts @user.errors.full_messages
   end
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
-    @user = User.find params[:id]
+    #@user = User.find params[:id]
     if @user.update_attributes(user_params)
       redirect_to show_user_path(id: @user.id)
     else
       render "edit"
     end
   end
+
+  def update_team
+    @user = params[team.user.index_users_on_team_id]
+    @user.save
+    redirect_to show_user_path(id: @user.id)
+    #if @user.update_attributes(team_params)
+    #   @user.save
+    #  redirect_to show_user_path(id: @user.id)
+    #else
+    #  render "show"
+    #end
+    #puts @user.errors.full_messages
+  end
+
+
 
   # DELETE /users/1
   # DELETE /users/1.json

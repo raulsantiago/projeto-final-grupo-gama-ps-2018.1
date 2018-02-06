@@ -2,24 +2,16 @@
 <html>
   <head>
     <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <% if logged_in? %>
-    <%= link_to current_user.name, show_user_path(id: current_user.id) %>
-    <%= link_to "Logout", logout_path, method: :delete %>
+  <body>
+    <% if logged_in? %>
     <%= render "layouts/header" %>
-    <body>
-
-              <%= yield %>
-
-    </body>
+    <%= yield %>
     <%= render "layouts/footer" %>
-<% else %>
-    <body>
-             <%= yield %>
-    </body>
-
-<% end %>
-
-<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <% else %>
+    <%= yield %>
+    <% end %>
+  </body>
 </html>
