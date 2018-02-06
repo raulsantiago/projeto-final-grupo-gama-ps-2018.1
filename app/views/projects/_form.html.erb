@@ -10,33 +10,34 @@
       </ul>
     </div>
   <% end %>
+  <div class="container-novo-projeto">
+    <div class="field-novo-projeto">
+      <%= form.label :name_project %>
+      <%= form.text_field :name_project, id: :project_name_project %>
+    </div>
 
-  <div class="field">
-    <%= form.label :name_project %>
-    <%= form.text_field :name_project, id: :project_name_project %>
-  </div>
+    <div class="field-novo-projeto">
+      <%= form.label :date_term %>
+      <%= form.datetime_select :date_term, id: :project_date_term %>
+    </div>
 
-  <div class="field">
-    <%= form.label :date_term %>
-    <%= form.datetime_select :date_term, id: :project_date_term %>
-  </div>
+    <div class="field-novo-projeto">
+      <%= form.label :date_completed %>
+      <%= form.datetime_select :date_completed, id: :project_date_completed %>
+    </div>
 
-  <div class="field">
-    <%= form.label :date_completed %>
-    <%= form.datetime_select :date_completed, id: :project_date_completed %>
-  </div>
+    <div class="field-novo-projeto">
+      <%= form.label :team_id %>
+      <%= form.text_field :team_id, id: :project_team_id %>
+    </div>
 
-  <div class="field">
-    <%= form.label :team_id %>
-    <%= form.text_field :team_id, id: :project_team_id %>
-  </div>
+    <div class="field-novo-projeto">
+      <%= form.label :user_id %>
+      <%= form.text_field :user_id, id: :project_user_id %>
+    </div>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id, id: :project_user_id %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+    <div class="actions-novo-projeto">
+      <%= form.submit %>
+    </div>
   </div>
 <% end %>
