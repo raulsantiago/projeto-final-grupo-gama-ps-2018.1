@@ -1,4 +1,3 @@
-
 //<%= render 'layouts/header' %>
 *{
   margin: 0;
@@ -15,7 +14,6 @@
 
 body{
   background-color: #6060b6;
-  overflow-x: hidden;
   max-height: 100%;
 }
 
@@ -45,7 +43,7 @@ font-size: 25px;
 
 
 
-.box-login h2{  
+.box-login h2{
   font-family: sans-serif;
   padding-top: 35px;
   margin-top: 10px;
@@ -53,7 +51,7 @@ font-size: 25px;
   padding-left: 70px;
   font-size: 15px;
   color: #000000;
-}  
+}
 
 .box-login h3{
   font-family: sans-serif;
@@ -65,7 +63,7 @@ font-size: 25px;
 }
 
 .input-login{
-  
+
   margin: 0 auto 20px auto;
   display: block;
   background-color: #ffffff;
@@ -73,7 +71,7 @@ font-size: 25px;
   height: 30px;
   padding: 0 15px;
   border-radius: 3px;
-  
+
 }
 
 /*-------------------CAMPOS DO BOTAO LOGIN-----------------*/
@@ -115,4 +113,151 @@ font-size: 25px;
 }
 .link-cadastro{
   margin-top: 10px;
-  }
+}
+
+/*------------------PÁGINA REDEFINIR SENHA ---------------*/
+
+/*------------------- REDEFINIR SENHA---------------------*/
+.titulo-redefsenha{
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-size: 25px;
+}
+/*-----------------CAIXA/BOX DE REDEFINIR SENHA------------*/
+
+.container-redefsenha{
+  display: block;
+  border-radius: 5px;
+  margin: 30px auto;
+  background-color: #EDEDED;
+  width: 300px;
+  height: 300px;
+}
+.container-redefsenha p{
+  font-size: 15px;
+  text-align: center;
+  padding: 20px;
+}
+.container-redefsenha label{
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding-left: 35px;
+  font-size: 15px;
+}
+.container-redefsenha input{
+  display: block;
+  margin: 5px auto;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  height: 25px;
+  width: 233px;
+}
+.botao-redefsenha{
+  height: 30px;
+  width: 245px;
+  display: block;
+  margin: 30px auto;
+  border: solid 1px;
+  border-color: #132A57;
+  background-color: #132A57;
+  color: white;
+  border-radius: 3px;
+}
+.botao-redefsenha:hover{
+  background-color: #aaaee4;
+  transition: 0.3s;
+  border: solid 1px;
+  border-color: #aaaee4;
+  color:#132A57
+}
+/*---------------------PÁGINA CRIAR TIME--------------*/
+.titulo-criar-time{
+  text-align: center;
+  color: white;
+  margin: 40px auto;
+}
+
+/*-----------------BOX DO FORMULARIO CRIAR TIME--------*/
+.container-criar-time{
+  border: 1px solid black;
+  width: 400px;
+  height: 210px;
+  margin: 0 auto;
+  background-color: #ededed;
+}
+.field-criar-times label{
+  max-width: 100%;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+.field-criar-times{
+  margin: 35px auto;
+}
+.criar-time-input {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+/*------------------BOTAO CRIAR TIME ----------------*/
+.actions-criar-times {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  background-color: #132A57;
+  border-radius: 3px;
+  text-decoration: none;
+  border-color: #132A57;
+  text-align: center;
+  height: 30px;
+  width: 260px;
+  color: #ededed;
+  border: solid 1px;
+}
+.actions-criar-times:hover{
+  background-color: #aaaee4;
+  transition: 0.3s;
+  border: solid 1px;
+  border-color: #aaaee4;
+  color:#132A57
+}
+/*-------------CRIAR TIME TITULO----------*/
+.titulo-criar-time{
+  text-align: center;
+  margin-top: 50px;
+  color: black;
+}
+
+/*---------LINK PARA VOLTAR-------------*/
+.botao-voltar-criar-time {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 12px;
+  color: black;
+  margin: 5px auto;
+}
+.botao-voltar-criar-time:hover {
+  color: red;
+}
+/*------------PAGINA EDITAR TIME-----------*/
+/*----------TITULO EDITAR TIME---------*/
+.titulo-editar-time{
+  text-align: center;
+  margin: 50px auto;
+}
+.botao-mostrar-editar-time{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 12px;
+  color: black;
+}
+.botao-mostrar-editar-time:hover{
+  color: red;
+}

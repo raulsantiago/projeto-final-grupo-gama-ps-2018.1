@@ -1,33 +1,17 @@
-<<<<<<< HEAD
-<h1>Login</h1>
-
 <%= form_for :session, url: :login do |form| %>
-
-  <%= form.label "E-mail" %>
-  <%= form.email_field :email %>
-
-  <%= form.label "Senha" %>
-  <%= form.password_field :password %>
-
-  <%= form.submit "Entrar" %>
-
-<% end %>
-=======
-<%= form_for :session, url: :login do |form| %>
-
 
 <div class="logo-login">
 <%= link_to index_user_path do %>
   <%= image_tag("logo_header.png")%>
-  
+
 <% end %>
 
 </div>
 <h1 class="titulo-login">Faça seu Login</h1>
   <section id ="login">
-      
+
     <div class= "box-login">
-      
+
       <h2>Email (@injunior.com.br): </h2>
       <%= form.email_field :email, class: "input-login", id: "login" %>
 
@@ -41,5 +25,3 @@
 </section>
 
 <% end %>
-
->>>>>>> 1494ab2def4fc9682a3c9e057540aa72fdaccf12

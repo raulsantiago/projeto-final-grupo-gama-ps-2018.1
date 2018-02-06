@@ -10,7 +10,9 @@
 
   <h1 class="titulo-cadastro">Cadastro</h1>
   <div class= "formulario-cadastro">
+   
   <div class="field-cadastro">
+
     <% if @user.errors.any? && @user.errors[:name] %>
       <%= form.label "Nome #{@user.errors[:name].first}" %>
     <% else %>
