@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 <p id="notice"><%= notice %></p>
+=======
+
+
+>>>>>>> 65603ff4c6f4b972193904df75c7b30937d6aaed
 <p>
   <strong>Name team:</strong>
   <%= @team.name_team %>
 </p>
+<<<<<<< HEAD
 <p>
 <% @users.each do |user| %>
 <% if user.team_id == @team.id %>
@@ -12,3 +18,8 @@
 </p>
 <%= link_to 'Edit', edit_team_path(@team) %> |
 <%= link_to 'Back', teams_path %>
+=======
+
+<%= link_to 'Editar', edit_team_path(@team) %> |
+<%= link_to 'Voltar', teams_path %>
+>>>>>>> 65603ff4c6f4b972193904df75c7b30937d6aaed

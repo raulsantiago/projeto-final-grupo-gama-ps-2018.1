@@ -18,7 +18,7 @@
     margin: 5px auto;
     border-color:#0c3b69;
     box-sizing:border-box;
-    width:300px;  
+    width:600px;  
   }
 
 .email-show{
@@ -118,6 +118,7 @@
     width: 160px; 
     border: solid 1px;
     border: none;
+    color: white;
     
 }
 
@@ -131,11 +132,11 @@
 }
 
 
-.botao-atualizar-show {
+.botao-atualizar-show a{
     text-decoration: none;
     color:  #ededed;
 }
-.botao-cadastro-cargo {
+.botao-cadastro-cargo a{
     text-decoration: none;
     color: #ededed;
 }
