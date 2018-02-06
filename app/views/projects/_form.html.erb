@@ -12,32 +12,31 @@
   <% end %>
   <div class="container-novo-projeto">
     <div class="field-novo-projeto">
-      <%= form.label :name_project %>
+      <%= form.label "Nome do Projeto:" %>
       <%= form.text_field :name_project, id: :project_name_project %>
     </div>
 
     <div class="field-novo-projeto">
-      <%= form.label :date_term %>
+      <%= form.label "Data de prazo:" %>
       <%= form.datetime_select :date_term, id: :project_date_term %>
     </div>
 
     <div class="field-novo-projeto">
-      <%= form.label :date_completed %>
+      <%= form.label "Data de conclusão:" %>
       <%= form.datetime_select :date_completed, id: :project_date_completed %>
     </div>
 
     <div class="field-novo-projeto">
-      <%= form.label :team_id %>
+      <%= form.label "Time:" %>
       <%= form.text_field :team_id, id: :project_team_id %>
     </div>
 
     <div class="field-novo-projeto">
-      <%= form.label :user_id %>
+      <%= form.label "Usuário:" %>
       <%= form.text_field :user_id, id: :project_user_id %>
     </div>
 
-    <div class="actions-novo-projeto">
-      <%= form.submit %>
-    </div>
+      <%= form.submit "Criar projeto", :class=> "botao-criar-novo-projeto" %>
+      <%= link_to 'Voltar', projects_path, :class=> "botao-voltar-novo-projeto"%>
   </div>
 <% end %>

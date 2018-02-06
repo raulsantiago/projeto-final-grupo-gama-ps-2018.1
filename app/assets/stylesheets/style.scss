@@ -2,6 +2,26 @@
 *{
   margin: 0;
 }
+/*---------------------FONTES----------------*/
+ @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+ @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+p, label, input {
+  font-family: 'Slabo 27px', serif;
+}
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+}
+/*
+@font-face {
+     font-family: "CaviarDreams";
+     src: local('CaviarDreams.ttf'), url('CaviarDreams.ttf');
+}
+h1{
+  font: CaviarDreams, Arial, Tahoma, Sans-serif;
+}
+//    font: helveticaneue, Arial, Tahoma, Sans-serif;
+*/
 
 /*-------------------CAMPOS DO LOGO LOGIN-----------------*/
 
@@ -14,9 +34,7 @@
 
 body{
   background-color: #6060b6;
-<<<<<<< HEAD
   max-height: 100%;
-=======
   background: -webkit-linear-gradient(top left, rgb(186, 172, 243) 0%, rgb(68, 52, 212) 100%);
   background: -moz-linear-gradient(top left, #d4d1df 0%, rgb(72, 61, 167) 100%);
   background: -o-linear-gradient(top left, rgb(192, 189, 204) 0%, rgb(76, 70, 131) 100%);
@@ -25,7 +43,7 @@ body{
   width: 100%;
   height: 100%;
   min-height: 100vh;
->>>>>>> master
+  overflow-x: hidden;
 }
 
 /*-------------------CAMPOS DO TITULO LOGIN-----------------*/
@@ -55,33 +73,24 @@ font-size: 25px;
 
 
 .box-login h2{
-<<<<<<< HEAD
-  font-family: sans-serif;
-=======
->>>>>>> master
+  text-align: center;
   padding-top: 35px;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-left: 70px;
   font-size: 15px;
-<<<<<<< HEAD
   color: #000000;
-=======
-//  color: #000000;
->>>>>>> master
 }
 
 .box-login h3{
+  text-align: center;
   font-family: sans-serif;
   margin-bottom:5px;
-  padding-left: 70px;
   font-size: 15px;
 
   color: #000000;
 }
 
 .input-login{
-
   margin: 0 auto 20px auto;
   display: block;
   background-color: #ffffff;
@@ -131,7 +140,6 @@ font-size: 25px;
 }
 .link-cadastro{
   margin-top: 10px;
-<<<<<<< HEAD
 }
 
 /*------------------PÁGINA REDEFINIR SENHA ---------------*/
@@ -151,7 +159,7 @@ font-size: 25px;
   margin: 30px auto;
   background-color: #EDEDED;
   width: 300px;
-  height: 300px;
+  height: 250px;
 }
 .container-redefsenha p{
   font-size: 15px;
@@ -241,7 +249,7 @@ font-size: 25px;
   transition: 0.3s;
   border: solid 1px;
   border-color: #aaaee4;
-  color:#132A57
+  color:#132A57;
 }
 /*-------------CRIAR TIME TITULO----------*/
 .titulo-criar-time{
@@ -282,17 +290,146 @@ font-size: 25px;
 }
 
 /*---------------PÁGINA CRIAR PROJETO----------------*/
-.container-novo-projeto{
-  margin: 0 auto;
+
+/*---------------TITULO CRIAR PROJETO---------------*/
+.titulo-novo-projeto{
+  text-align: center;
+  margin: 30px auto;
 }
+
+
+/*--------------CONTAINER CRIAR PROJETO-------------*/
+.container-novo-projeto{
+  width: 500px;
+  height: 480px;
+  margin: 50px auto;
+  background-color: #ededed;
+  border-radius: 5px;
+
+}
+/*--------------CAMPOS INFO DE CRIAR PROJETO----------*/
 .field-novo-projeto{
   text-align: center;
 }
-=======
-  }
-<<<<<<< HEAD
-=======
+.field-novo-projeto label{
+  display: block;
+  max-width: 100%;
+  padding-top: 20px;
+  font-weight: bold;
+}
+.field-novo-projeto input{
+  display: block;
+  margin: 5px auto;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  height: 25px;
+  width: 233px;
+}
+.botao-criar-novo-projeto{
+  height: 30px;
+  width: 245px;
+  display: block;
+  margin: 20px auto;
+  border: solid 1px;
+  border-color: #132A57;
+  background-color: #132A57;
+  color: white;
+  border-radius: 3px;
+}
+.botao-criar-novo-projeto:hover{
+  background-color: #aaaee4;
+  transition: 0.3s;
+  border: solid 1px;
+  border-color: #aaaee4;
+  color:#132A57;
+}
+//SELECT QUE NAO FUNCIONOU
+.select-novo-projeto{
+  background-color: black;
+}
+/*--------------ICONE DE VOLTAR PAG------------*/
 
- 
->>>>>>> 70dd3a3336a719a83c3f6cab49a5e886c761a760
->>>>>>> master
+.botao-voltar-novo-projeto{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 12px;
+  color: black;
+  margin: 5px auto;
+}
+.botao-voltar-novo-projeto:hover {
+  color: red;
+}
+/*---------------PÁGINA PROJETOS---------------*/
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#customers td, #customers th {
+    padding: 8px;
+    border: 1px solid black;
+
+}
+//NAO SEI O QUE FAZ:
+#customers tr:nth-child(even){
+  background-color: #pink;
+}
+/*
+#customers tr:hover {
+  background-color: #ddd;
+}*/
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: silver;
+    color: black;
+  }
+/*----LINK DA PAGINA PROJETOS QUE DIRECIONA PARA CRIAR PROJETO-----*/
+/* OBS: essa é a versão alternative de Thomaz, mas seguindo o padrão do sistema (quando logado), usamos outra classe*/
+.botao-para-criar-projeto{
+  height: 30px;
+  width: 245px;
+  display: block;
+  margin: 30px auto;
+  border: solid 1px;
+  border-color: #132A57;
+  background-color: #132A57;
+  color: white;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+.botao-para-criar-projeto:hover{
+  background-color: #aaaee4;
+  transition: 0.3s;
+  border: solid 1px;
+  border-color: #aaaee4;
+  color:#132A57;
+}
+/*----------AQUI ACABA A VERSAO ALTERNATIVA.---------*/
+
+/*AQUI COMECA O CODIGO DE "BOTAO" QUANDO LOGADO NO SISTEMA---------*/
+.botao-criar-novo-time:hover{
+  background-color: #aaaee4;
+  transition: 0.3s;
+  border: solid 1px;
+  border-color: #aaaee4;
+  color:#132A57;
+}
+
+/*--------------------PÁGINA DE NOTIFICAÇÕES---------------*/
+
+/* Algumas classes foram importadas das classes da página Projetos (tbm criadas por mim), por isso não estarão aqui (Thomaz)*/
+
+.field-especial-para-textos-grandes{
+  text-align: center;
+  width: 250px;
+  height: 300px;
+}
