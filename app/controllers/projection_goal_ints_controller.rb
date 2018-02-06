@@ -1,5 +1,6 @@
 class ProjectionGoalIntsController < ApplicationController
   before_action :set_projection_goal_int, only: [:show, :edit, :update, :destroy]
+  before_action :user_nao_logado, except: [:new, :create]
 
   # GET /projection_goal_ints
   # GET /projection_goal_ints.json
@@ -71,4 +72,6 @@ class ProjectionGoalIntsController < ApplicationController
     def projection_goal_int_params
       params.require(:projection_goal_int).permit(:january, :february, :march, :april, :may, :june, :july, :august, :september, :october, :november, :december, :goal_int_id)
     end
+
+
 end

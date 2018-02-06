@@ -1,5 +1,7 @@
 class OfficesController < ApplicationController
   before_action :set_office, only: [:show, :edit, :update, :destroy]
+  before_action :user_nao_logado, except: [:new, :create]
+
 
   # GET /offices
   # GET /offices.json
@@ -72,4 +74,7 @@ class OfficesController < ApplicationController
     def office_params
       params.require(:office).permit(:name_office, :permission, :user_id)
     end
+
+
+
 end

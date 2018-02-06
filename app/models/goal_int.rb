@@ -1,5 +1,5 @@
 class GoalInt < ApplicationRecord
-  belongs_to :performed_goal_int, optional: true
-  belongs_to :projection_goal_int, optional: true
-  belongs_to :reached_goal_int, optional: true
+  has_many :performed_goal_int, dependent: :destroy
+  has_many :projection_goal_int, dependent: :destroy
+  has_many :reached_goal_int, dependent: :destroy
 end

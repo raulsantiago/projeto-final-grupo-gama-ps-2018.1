@@ -1,9 +1,14 @@
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>Name team:</strong>
   <%= @team.name_team %>
 </p>
-
+<p>
+<% @users.each do |user| %>
+<% if user.team_id == @team.id %>
+  <p><%= user.name %></p><br>
+<% end %>
+<% end %>
+</p>
 <%= link_to 'Edit', edit_team_path(@team) %> |
 <%= link_to 'Back', teams_path %>

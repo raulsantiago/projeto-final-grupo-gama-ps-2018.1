@@ -1,5 +1,7 @@
 class GoalIntsController < ApplicationController
   before_action :set_goal_int, only: [:show, :edit, :update, :destroy]
+  before_action :user_nao_logado, except: [:new, :create]
+  b
 
   # GET /goal_ints
   # GET /goal_ints.json
@@ -10,6 +12,9 @@ class GoalIntsController < ApplicationController
   # GET /goal_ints/1
   # GET /goal_ints/1.json
   def show
+    @performed_goal_int = Performed_goal_int.all
+    @projection_goal_int = Projection_goal_int.all
+    @reached_goal_int = Reached_goal_int.all
   end
 
   # GET /report
@@ -77,4 +82,8 @@ class GoalIntsController < ApplicationController
     def goal_int_params
       params.require(:goal_int).permit(:name_goal_int, :year_goal_int)
     end
+
+  
+
+
 end

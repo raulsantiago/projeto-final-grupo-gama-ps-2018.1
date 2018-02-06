@@ -1,5 +1,8 @@
 class GoalFloatsController < ApplicationController
   before_action :set_goal_float, only: [:show, :edit, :update, :destroy]
+  before_action :user_nao_logado, except: [:new, :create]
+
+
 
   # GET /goal_floats
   # GET /goal_floats.json
@@ -10,6 +13,9 @@ class GoalFloatsController < ApplicationController
   # GET /goal_floats/1
   # GET /goal_floats/1.json
   def show
+    @performed_goal_float = Performed_goal_float.all
+    @projection_goal_float = Projection_goal_float.all
+    @reached_goal_float = Reached_goal_float.all
   end
 
   # GET /goal_floats/new
@@ -71,4 +77,8 @@ class GoalFloatsController < ApplicationController
     def goal_float_params
       params.require(:goal_float).permit(:name_goal_float, :year_goal_float)
     end
+
+  
+
+
 end

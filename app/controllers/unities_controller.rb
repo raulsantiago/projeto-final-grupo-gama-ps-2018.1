@@ -1,5 +1,7 @@
 class UnitiesController < ApplicationController
   before_action :set_unity, only: [:show, :edit, :update, :destroy]
+  before_action :user_nao_logado, except: [:new, :create]
+
 
   # GET /unities
   # GET /unities.json
@@ -71,4 +73,7 @@ class UnitiesController < ApplicationController
     def unity_params
       params.require(:unity).permit(:name_unity)
     end
+
+
+
 end

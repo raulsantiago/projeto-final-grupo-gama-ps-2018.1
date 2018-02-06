@@ -9,7 +9,6 @@
     <% if logged_in? %>
     <%= render "layouts/header" %>
     <%= yield %>
-    <%= render "layouts/footer" %>
     <% else %>
     <%= yield %>
     <% end %>

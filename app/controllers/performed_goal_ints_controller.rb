@@ -1,5 +1,6 @@
 class PerformedGoalIntsController < ApplicationController
   before_action :set_performed_goal_int, only: [:show, :edit, :update, :destroy]
+  before_action :user_nao_logado, except: [:new, :create]
 
   # GET /performed_goal_ints
   # GET /performed_goal_ints.json
@@ -71,4 +72,6 @@ class PerformedGoalIntsController < ApplicationController
     def performed_goal_int_params
       params.require(:performed_goal_int).permit(:january, :february, :march, :april, :may, :june, :july, :august, :september, :october, :november, :december, :goal_int_id)
     end
+
+
 end

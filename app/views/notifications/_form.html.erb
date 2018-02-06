@@ -26,6 +26,10 @@
     <%= form.datetime_select :date_send, id: :notification_date_send %>
   </div>
 
+  <%= form.label " "%>
+    <%= select("", "user_id", User.all.collect {|user| [ user.name,
+      user.id ] }, {include_blank: "Membro"}, id: :user) %>
+
   <div class="actions">
     <%= form.submit %>
   </div>
