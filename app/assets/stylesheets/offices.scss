@@ -1,3 +1,186 @@
 // Place all the styles related to the offices controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+    background-color: #6060b6;
+    background: -webkit-linear-gradient(top left, rgb(186, 172, 243) 0%, rgb(68, 52, 212) 100%);
+    background: -moz-linear-gradient(top left, #d4d1df 0%, rgb(72, 61, 167) 100%);
+    background: -o-linear-gradient(top left, rgb(192, 189, 204) 0%, rgb(76, 70, 131) 100%);
+    background: linear-gradient(to bottom right, rgb(206, 201, 211) 0%, rgb(43, 35, 128) 100%);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+  }
+  
+  /*-------------------CAMPOS DO TITULO LOGIN-----------------*/
+  .titulo-novo-cadastro{
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  padding-top: 20px;
+  text-align: center;
+  color: #ededed;
+  font-size: 25px;
+  }
+  
+  
+  /*-------------------CAMPOS DO BOX LOGIN-----------------*/
+  
+  .box-novo-cadastro{
+    height: 360px;
+    max-width: 400px;
+    background-color: #ededed;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ededed;
+    border-radius: 5px;
+    margin: 30px auto;
+    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+  }
+  
+  
+  
+  .box-novo-cadastro h2{  
+    font-family: sans-serif;
+    padding-top: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 70px;
+    font-size: 15px;
+    color: #000000;
+  }  
+  
+  .box-novo-cadastro h3{
+    font-family: sans-serif;
+    margin-bottom:5px;
+    padding-left: 70px;
+    font-size: 15px;
+  
+    color: #000000;
+  }
+  
+  .input-novo-cadastro{
+    
+    margin: 0 auto 20px auto;
+    display: block;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    height: 30px;
+    padding: 0 15px;
+    border-radius: 3px;
+    
+  }
+  
+  /*-------------------CAMPOS DO BOTAO LOGIN-----------------*/
+  
+  .botao-novo-cadastro{
+    margin: 0 auto 20px auto;
+    display: block;
+    margin-top: 50px;
+    background-color: #132A57;
+    border-radius: 3px;
+    text-decoration: none;
+    border-color: #132A57;
+    text-align: center;
+    height: 30px;
+    width: 260px;
+    color: #ededed;
+    border: solid 1px;
+
+  }
+  .botao-novo-cadastro:hover{
+    background-color: #aaaee4;
+    transition: 0.3s;
+    border: solid 1px;
+    border-color: #aaaee4;
+    color:#132A57
+  }
+  
+  .botao-back-novo-cadastro{
+
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #0a0a0a;
+  font-size: 15px;
+  padding-top: 10px;
+  }
+  .botao-back-novo-cadastro:hover{
+
+  text-decoration: underline;
+  color: #b92f2a;
+    }
+  
+
+
+//INDEX CARGOS
+  .botao-index-editar-cargos{
+
+    background-color: #b92f2a; 
+    border: none;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    border: solid 1.5px;
+    border-color: #838485;
+    font-size: 12px;
+    width: 80px; 
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 45%;
+    color: white;
+    padding: 12px 10px 0 10px;
+}
+
+.botao-index-delete-cargos{
+
+    background-color: #b92f2a; 
+    border: none;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    border: solid 1px;
+    border-color: #838485;
+    font-size: 12px;
+    width: 100px; 
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 45%;
+    color: white;
+    padding-top: 10px;
+}
+
+
+.botao-index-editar-cargos {
+    text-decoration: none;
+    color:  #ededed;
+}
+.botao-index-delete-cargos {
+    text-decoration: none;
+    color: #ededed;
+}
+
+
+
+.link-tabela-cargos {
+    font-family: sans-serif;
+    text-decoration: none;
+    color:#23266e;
+    font-size: 18px;
+}
+
+#tabela-cargos{
+  padding: 20px;
+  border-radius: 5px;
+  border: solid 1px;
+  border-color: #838485;
+  box-shadow: 3px 3px 3px black;
+  background: #c2b8b8;
+  width: 70% !important; /*Importante manter o !important rs */
+  margin: auto;
+}
+//FIM DE INDEX CARGOS

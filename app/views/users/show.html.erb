@@ -23,13 +23,12 @@
 
       <hr class= "lh-show"></hr>
 
-      <p class="titulo-time-show">Membro pertence ao time:</p>
+      <p class="titulo-time-show">Time:</p>
       <%= @user.team.name_team if @user.team_id %>
       <%= render "team" %>
       <hr class= "lh-show"></hr>
 
-
      <%= link_to 'Editar', edit_user_path(@user), class:"botao-cadastro-alert" %>
-     <%= link_to 'Delete', destroy_user_path, class:"botao-cadastro-alert2",
+     <%= link_to 'Excluir', destroy_user_path, class:"botao-cadastro-alert2",
       method: :delete, data: { confirm: 'Você tem certeza?' } %>
 </div>

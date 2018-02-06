@@ -5,5 +5,27 @@
 
 .link-tabela-membros a{
     text-decoration: none;
-    color:#393a74;
+    color:#000000;
 }
+.link-tabela-membros :hover{
+    text-decoration: underline;
+    color: #ededed;
+}
+#tabela-membros{
+margin: auto;
+box-shadow: 5px 5px 5px #000000;
+}
+
+#tabela-membros, .coluna-membros, .link-tabela-membros {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.coluna-membros, .link-tabela-membros {
+    padding: 15px;
+    background: #44365a;
+}
+.link-tabela-membros{
+    background: #745e99;
+}
+
+

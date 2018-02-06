@@ -1,6 +1,6 @@
 <%= form_for @user, url: @user.persisted? ? :edit_team_user : :show_user do |form| %>
 
-  <%= form.label "Time", class:"times-show" %>
+  <%= form.label " ", class:"times-show" %>
     <%= select("", "team_id", Team.all.collect {|team| [ team.name_team,
       team.id ] }, id: :team, class: "selecao-times-show") %>
 
