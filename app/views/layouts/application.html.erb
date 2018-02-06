@@ -3,23 +3,21 @@
   <head>
     <%= csrf_meta_tags %>
   </head>
+  <body>
   <% if logged_in? %>
-    <%= link_to current_user.name, show_user_path(id: current_user.id) %>
-    <%= link_to "Logout", logout_path, method: :delete %>
+    
     <%= render "layouts/header" %>
-    <body>
+    
 
               <%= yield %>
 
-    </body>
-    <%= render "layouts/footer" %>
+ 
 <% else %>
-    <body>
+  
              <%= yield %>
-    </body>
-
+   
 <% end %>
-
+</body>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </html>

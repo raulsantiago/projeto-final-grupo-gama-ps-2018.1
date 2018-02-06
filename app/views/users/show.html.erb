@@ -1,29 +1,35 @@
 <div class="container-show">
 
-<p id="notice"><%= notice %></p>
-<p class="nome-show">
-  <strong class="nome-show-titulo">Nome:</strong><br>
-  <div class="nome-show-usuario"><%= @user.name%></div>
-</p>
-<hr class= "lh1-show"></hr>
-<p class="email-show">
-  <strong class="email-show-titulo">E-mail:</strong><br>
-  <div class="email-show-usuario"><%= @user.email%></div>
-</p>
-<hr class= "lh2-show"></hr>
-<p class="cargos-show">Cargos:</p>
+      <p id="notice"><%= notice %></p>
+      <p class="nome-show">
+        <strong class="noheight: 130px;me-show-titulo">Nome:</strong><br>
+        <div class="nome-show-usuario"><%= @user.name%></div>
+      </p>
+      <hr class= "lh-show"></hr>
+      <p class="email-show">
+          <strong class="email-show-titulo">E-mail:</strong><br>
+          <div class="email-show-usuario"><%= @user.email%></div>
+      </p>
+      <hr class= "lh-show"></hr>
+      <p class="cargos-show">Cargos:</p>
 
-<% @offices.each do |office| %>
-<% if office.user.id == @user.id %>
-  <p><%= office.name_office %></p><br>
-<% end %>
-<% end %>
-<p>Membro pertence ao time:</p>
-<%= @user.team.name_team if @user.team_id %>
-<%= render "team" %>
-<button><%= link_to 'Cadastrar Time', new_team_path %></button>
+          <% @offices.each do |office| %>
+          <% if office.user.id == @user.id %>
+            <p class="cargos-show-usuario"><%= office.name_office %></p><br>
+          <% end %>
+          <% end %>
 
-<button class="botao-cadastro-cargo"><%= link_to 'Cadastrar Cargo', new_office_path %></button><br>
-<button class="botao-cadastro-alert"><%= link_to 'Editar', edit_user_path(@user) %></button>
-<button class="botao-cadastro-alert2"><%= link_to 'Delete', destroy_user_path,
- method: :delete, data: { confirm: 'Você tem certeza?' } %></button>
+      <%= link_to 'Cadastrar Cargo', new_office_path,  class:"botao-cadastro-cargo" %>
+
+      <hr class= "lh-show"></hr>
+
+      <p class="titulo-time-show">Membro pertence ao time:</p>
+      <%= @user.team.name_team if @user.team_id %>
+      <%= render "team" %>
+      <hr class= "lh-show"></hr>
+
+
+     <%= link_to 'Editar', edit_user_path(@user), class:"botao-cadastro-alert" %>
+     <%= link_to 'Delete', destroy_user_path, class:"botao-cadastro-alert2",
+      method: :delete, data: { confirm: 'Você tem certeza?' } %>
+</div>

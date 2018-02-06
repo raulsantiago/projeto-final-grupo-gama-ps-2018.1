@@ -13,7 +13,7 @@
             <li class="opt-menu"><%= link_to "Perfil", show_user_path(id: current_user.id) %></li>
             <li class="opt-menu"><%= link_to "Projetos", index_user_path %></li>
             <li class="opt-menu"><%= link_to "Membros", index_user_path %></li>
-            <li class="opt-menu"><%= link_to "Times", index_user_path %></li>
+            <li class="opt-menu"><%= link_to "Times", teams_user_path %></li>
             <li class="opt-menu"><%= link_to "Diretoria", index_user_path %></li>
             <li class="opt-menu"><%= link_to "Metas", index_user_path %></li>
             <li class="botao-logout"><%= link_to "Logout", logout_path, method: :delete %></li>
