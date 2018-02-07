@@ -1,8 +1,13 @@
 class User < ApplicationRecord
-  belongs_to :team, optional: true, dependent: :destroy
+  belongs_to :team, optional: true
+  belongs_to :tasks, optional: true
+  belongs_to :notification, optional: true
+  belongs_to :office, optional: true
 
-  has_many :notification, dependent: :destroy
-  has_many :user_notification, dependent: :destroy
+  has_many :user_tasks
+  has_many :user_notification
+  has_many :project, dependent: :destroy
+  has_many :office, dependent: :destroy
 
   has_secure_password
 

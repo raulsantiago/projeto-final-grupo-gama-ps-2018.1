@@ -1,51 +1,53 @@
 <div class="container-cadastro">
-
   <%= form_for @user,
     url: @user.persisted? ? :edit_user : :new_user do |form| %>
-    
   <div class="logo-cadastro">
-  <%= link_to index_user_path do %>
-    <%= image_tag("logo_header.png")%>
-  <% end %>
+    <%= link_to index_user_path do %>
+      <%= image_tag("logo_header.png")%>
+    <% end %>
   </div>
-
   <h1 class="titulo-cadastro">Cadastro</h1>
   <div class= "formulario-cadastro">
+
   <div class="field-cadastro">
+
     <% if @user.errors.any? && @user.errors[:name] %>
       <%= form.label "Nome #{@user.errors[:name].first}" %>
     <% else %>
-      <%= form.label "Nome" %>
+      <%= form.label "Nome:" %>
     <% end %>
     <%= form.text_field :name %>
   </div>
-
   <div class="field-cadastro">
     <% if @user.errors.any? && @user.errors[:email] %>
       <%= form.label "E-mail #{@user.errors[:email].first}" %>
     <% else %>
-      <%= form.label "E-mail" %>
+      <%= form.label "E-mail:" %>
     <% end %>
       <%= form.email_field :email %>
   </div>
-
   <div class="field-cadastro">
     <% if @user.errors.any? && @user.errors[:password] %>
       <%= form.label "Senha #{@user.errors[:password].first}" %>
     <% else %>
-      <%= form.label "Senha" %>
+      <%= form.label "Senha:" %>
     <% end %>
       <%= form.password_field :password %>
   </div>
-
   <div class="field-cadastro">
     <% if @user.errors.any? && @user.errors[:password_confirmation] %>
       <%= form.label "Confirmação de Senha #{@user.errors[:password_confirmation].first}" %>
     <% else %>
-      <%= form.label "Confirmação de Senha" %>
+      <%= form.label "Confirmação de Senha:" %>
     <% end %>
       <%= form.password_field :password_confirmation %>
   </div>
+
+
+  <%= form.label " "%>
+    <%= select("user", "team_id", Team.all.collect {|team| [ team.name_team,
+      team.id ] }, {include_blank: "Time"}, id: :team) %>
+
 
   <div class="actions-cadastro">
     <% if @user.persisted? %>
@@ -54,8 +56,8 @@
       <%= form.submit "Cadastrar" %>
     <% end %>
   </div>
-  </div>
+  <%= link_to 'Voltar', login_path, :class=> "botao-voltar-cadastro"%>
 
+  </div>
   <% end %>
-
-  </div>
+</div>

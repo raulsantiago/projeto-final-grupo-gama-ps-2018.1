@@ -1,5 +1,6 @@
 class TeamsController < ApplicationController
   before_action :set_team, only: [:show, :edit, :update, :destroy]
+  before_action :user_nao_logado, except: [:new, :create]
 
   # GET /teams
   # GET /teams.json
@@ -71,4 +72,6 @@ class TeamsController < ApplicationController
     def team_params
       params.require(:team).permit(:name_team)
     end
+
+
 end

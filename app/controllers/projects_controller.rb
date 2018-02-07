@@ -1,5 +1,7 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
+  before_action :user_nao_logado, except: [:new, :create]
+
 
   # GET /projects
   # GET /projects.json
@@ -10,6 +12,10 @@ class ProjectsController < ApplicationController
   # GET /projects/1
   # GET /projects/1.json
   def show
+    @tasks = Tasks.all
+    @progress_projects = Progress_projects.all
+    @unities = Unities.all
+    @users = Users.all
   end
 
   # GET /projects/new
@@ -71,4 +77,7 @@ class ProjectsController < ApplicationController
     def project_params
       params.require(:project).permit(:name_project, :date_term, :date_completed, :team_id, :user_id)
     end
+
+
+
 end

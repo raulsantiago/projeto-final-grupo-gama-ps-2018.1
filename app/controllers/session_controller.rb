@@ -1,5 +1,5 @@
 class SessionController < ApplicationController
-  
+
   before_action :user_logado, only: [:new, :create]
 
   #GET Login

@@ -31,7 +31,7 @@ class UsersController < ApplicationController
     @offices1 = Office.where('user_id = ?', @user.id)
     @offices = Office.all
     @teams = Team.all
-    #@offices = Office.new(user_params)
+    #@notifications = Notifications.all
   end
 
   # GET /users/new
@@ -70,9 +70,9 @@ class UsersController < ApplicationController
   end
 
   def update_team
-    @user = params[team.user.index_users_on_team_id]
-    @user.save
-    redirect_to show_user_path(id: @user.id)
+  #  @user = params[team.user.index_users_on_team_id]
+  #  @user.save
+  #  redirect_to show_user_path(id: @user.id)
     #if @user.update_attributes(team_params)
     #   @user.save
     #  redirect_to show_user_path(id: @user.id)
@@ -99,7 +99,7 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation, :team_id)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation, :team_id, :notification_id)
   end
 
   def user_correto

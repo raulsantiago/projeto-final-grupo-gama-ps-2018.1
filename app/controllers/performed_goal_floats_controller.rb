@@ -1,6 +1,6 @@
 class PerformedGoalFloatsController < ApplicationController
   before_action :set_performed_goal_float, only: [:show, :edit, :update, :destroy]
-
+  before_action :user_nao_logado, except: [:new, :create]
   # GET /performed_goal_floats
   # GET /performed_goal_floats.json
   def index
@@ -71,4 +71,7 @@ class PerformedGoalFloatsController < ApplicationController
     def performed_goal_float_params
       params.require(:performed_goal_float).permit(:january, :february, :march, :april, :may, :june, :july, :august, :september, :october, :november, :december, :goal_float_id)
     end
+
+
+
 end

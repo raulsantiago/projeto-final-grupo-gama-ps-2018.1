@@ -1,5 +1,7 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
+  before_action :user_nao_logado, except: [:new, :create]
+
 
   # GET /tasks
   # GET /tasks.json
@@ -71,4 +73,6 @@ class TasksController < ApplicationController
     def task_params
       params.require(:task).permit(:name_tasks, :description, :sprint, :project_id)
     end
+
+
 end

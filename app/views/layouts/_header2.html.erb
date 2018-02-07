@@ -1,0 +1,22 @@
+<header class="header">
+  			<div class="container-header">
+          <%= link_to index_user_path do %>
+            <%= image_tag("logo_header.png")%>
+          <% end %>
+        <nav role='navigation'>
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+            <li class="opt-menu"><%= link_to "Projetos", "/projects" %></li>
+            <li class="opt-menu"><%= link_to "Membros", index_user_path %></li>
+            <li class="opt-menu"><%= link_to "Times", "/teams" %></li>
+            <li class="opt-menu"><%= link_to "Diretoria", index_user_path %></li>
+            <li class="opt-menu"><%= link_to "Metas", "/goal_ints" %></li>            
+            </ul>
+          </div>
+        </nav>
+    </div>
+</header>

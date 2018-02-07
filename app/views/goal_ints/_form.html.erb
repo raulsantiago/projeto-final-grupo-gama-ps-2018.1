@@ -11,17 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name_goal_int %>
-    <%= form.text_field :name_goal_int, id: :goal_int_name_goal_int %>
-  </div>
+  <div class="container-novo-projeto">
+      <div class="field-novo-projeto">
+        <%= form.label "Nome da Meta:" %>
+        <%= form.text_field :name_goal_int, id: :goal_int_name_goal_int %>
+      </div>
 
-  <div class="field">
-    <%= form.label :year_goal_int %>
-    <%= form.number_field :year_goal_int, id: :goal_int_year_goal_int %>
-  </div>
+      <div class="field-novo-projeto">
+        <%= form.label "Ano da Meta" %>
+        <%= form.number_field :year_goal_int, id: :goal_int_year_goal_int %>
+      </div>
 
-  <div class="actions">
-    <%= form.submit %>
+      <div class="actions">
+        <%= form.submit "Criar Meta", :class=> "botao-criar-novo-projeto"%>
+      </div>
   </div>
 <% end %>

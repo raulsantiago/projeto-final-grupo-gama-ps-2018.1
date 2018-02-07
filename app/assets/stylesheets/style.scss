@@ -1,8 +1,27 @@
-
 //<%= render 'layouts/header' %>
 *{
   margin: 0;
 }
+/*---------------------FONTES----------------*/
+ @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+ @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+p, label, input {
+  font-family: 'Slabo 27px', serif;
+}
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+}
+/*
+@font-face {
+     font-family: "CaviarDreams";
+     src: local('CaviarDreams.ttf'), url('CaviarDreams.ttf');
+}
+h1{
+  font: CaviarDreams, Arial, Tahoma, Sans-serif;
+}
+//    font: helveticaneue, Arial, Tahoma, Sans-serif;
+*/
 
 /*-------------------CAMPOS DO LOGO LOGIN-----------------*/
 
@@ -14,6 +33,7 @@
   }
 body{
   background-color: #6060b6;
+  max-height: 100%;
   background: -webkit-linear-gradient(top left, rgb(186, 172, 243) 0%, rgb(68, 52, 212) 100%);
   background: -moz-linear-gradient(top left, #d4d1df 0%, rgb(72, 61, 167) 100%);
   background: -o-linear-gradient(top left, rgb(192, 189, 204) 0%, rgb(76, 70, 131) 100%);
@@ -51,27 +71,24 @@ font-size: 25px;
 
 
 
-.box-login h2{  
-  font-family: sans-serif;
+.box-login h2{
+  text-align: center;
   padding-top: 35px;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-left: 18%;
   font-size: 15px;
   color: #000000;
-}  
+}
 
 .box-login h3{
+  text-align: center;
   font-family: sans-serif;
   margin-bottom:5px;
-  padding-left: 18%;
   font-size: 15px;
-
   color: #000000;
 }
 
 .input-login{
-  
   margin: 0 auto 20px auto;
   display: block;
   background-color: #ffffff;
@@ -79,7 +96,7 @@ font-size: 25px;
   height: 30px;
   padding: 0 15px;
   border-radius: 3px;
-  
+
 }
 
 /*-------------------CAMPOS DO BOTAO LOGIN-----------------*/
@@ -121,7 +138,299 @@ font-size: 25px;
 }
 .link-cadastro{
   margin-top: 10px;
+}
+
+/*------------------PÁGINA REDEFINIR SENHA ---------------*/
+
+/*------------------- REDEFINIR SENHA---------------------*/
+.titulo-redefsenha{
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-size: 25px;
+}
+/*-----------------CAIXA/BOX DE REDEFINIR SENHA------------*/
+
+.container-redefsenha{
+  display: block;
+  border-radius: 5px;
+  margin: 30px auto;
+  background-color: #EDEDED;
+  width: 300px;
+  height: 250px;
+}
+.container-redefsenha p{
+  font-size: 15px;
+  text-align: center;
+  padding: 20px;
+}
+.container-redefsenha label{
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding-left: 35px;
+  font-size: 15px;
+}
+.container-redefsenha input{
+  display: block;
+  margin: 5px auto;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  height: 25px;
+  width: 233px;
+}
+.botao-redefsenha{
+  height: 30px;
+  width: 245px;
+  display: block;
+  margin: 30px auto;
+  border: solid 1px;
+  border-color: #132A57;
+  background-color: #132A57;
+  color: white;
+  border-radius: 3px;
+}
+.botao-redefsenha:hover{
+  background-color: #aaaee4;
+  transition: 0.3s;
+  border: solid 1px;
+  border-color: #aaaee4;
+  color:#132A57
+}
+/*---------------------PÁGINA CRIAR TIME--------------*/
+.titulo-criar-time{
+  text-align: center;
+  color: white;
+  margin: 40px auto;
+}
+
+/*-----------------BOX DO FORMULARIO CRIAR TIME--------*/
+.container-criar-time{
+  border: 1px solid black;
+  width: 400px;
+  height: 210px;
+  margin: 0 auto;
+  background-color: #ededed;
+}
+.field-criar-times label{
+  max-width: 100%;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+.field-criar-times{
+  margin: 35px auto;
+}
+.criar-time-input {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+/*------------------BOTAO CRIAR TIME ----------------*/
+.actions-criar-times {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  background-color: #132A57;
+  border-radius: 3px;
+  text-decoration: none;
+  border-color: #132A57;
+  text-align: center;
+  height: 30px;
+  width: 260px;
+  color: #ededed;
+  border: solid 1px;
+}
+.actions-criar-times:hover{
+  background-color: #aaaee4;
+  transition: 0.3s;
+  border: solid 1px;
+  border-color: #aaaee4;
+  color:#132A57;
+}
+/*-------------CRIAR TIME TITULO----------*/
+.titulo-criar-time{
+  text-align: center;
+  margin-top: 50px;
+  color: black;
+}
+
+/*---------LINK PARA VOLTAR-------------*/
+.botao-voltar-criar-time {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 12px;
+  color: black;
+  margin: 5px auto;
+}
+.botao-voltar-criar-time:hover {
+  color: red;
+}
+/*------------PAGINA EDITAR TIME-----------*/
+/*----------TITULO EDITAR TIME---------*/
+.titulo-editar-time{
+  text-align: center;
+  margin: 50px auto;
+}
+.botao-mostrar-editar-time{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 12px;
+  color: black;
+}
+.botao-mostrar-editar-time:hover{
+  color: red;
+}
+
+/*---------------PÁGINA CRIAR PROJETO----------------*/
+
+/*---------------TITULO CRIAR PROJETO---------------*/
+.titulo-novo-projeto{
+  text-align: center;
+  margin: 30px auto;
+}
+
+
+/*--------------CONTAINER CRIAR PROJETO-------------*/
+.container-novo-projeto{
+  width: 500px;
+  height: 480px;
+  margin: 50px auto;
+  background-color: #ededed;
+  border-radius: 5px;
+
+}
+/*--------------CAMPOS INFO DE CRIAR PROJETO----------*/
+.field-novo-projeto{
+  text-align: center;
+}
+.field-novo-projeto label{
+  display: block;
+  max-width: 100%;
+  padding-top: 20px;
+  font-weight: bold;
+}
+.field-novo-projeto input{
+  display: block;
+  margin: 5px auto;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  height: 25px;
+  width: 233px;
+}
+.botao-criar-novo-projeto{
+  height: 30px;
+  width: 245px;
+  display: block;
+  margin: 20px auto;
+  border: solid 1px;
+  border-color: #132A57;
+  background-color: #132A57;
+  color: white;
+  border-radius: 3px;
+}
+.botao-criar-novo-projeto:hover{
+  background-color: #aaaee4;
+  transition: 0.3s;
+  border: solid 1px;
+  border-color: #aaaee4;
+  color:#132A57;
+}
+//SELECT QUE NAO FUNCIONOU
+.select-novo-projeto{
+  background-color: black;
+}
+/*--------------ICONE DE VOLTAR PAG------------*/
+
+.botao-voltar-novo-projeto{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 12px;
+  color: black;
+  margin: 5px auto;
+}
+.botao-voltar-novo-projeto:hover {
+  color: red;
+}
+/*---------------PÁGINA PROJETOS---------------*/
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#customers td, #customers th {
+    padding: 8px;
+    border: 1px solid black;
+
+}
+//NAO SEI O QUE FAZ:
+#customers tr:nth-child(even){
+  background-color: #pink;
+}
+/*
+#customers tr:hover {
+  background-color: #ddd;
+}*/
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: silver;
+    color: black;
   }
+/*----LINK DA PAGINA PROJETOS QUE DIRECIONA PARA CRIAR PROJETO-----*/
+/* OBS: essa é a versão alternative de Thomaz, mas seguindo o padrão do sistema (quando logado), usamos outra classe*/
+.botao-para-criar-projeto{
+  height: 30px;
+  width: 245px;
+  display: block;
+  margin: 30px auto;
+  border: solid 1px;
+  border-color: #132A57;
+  background-color: #132A57;
+  color: white;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+.botao-para-criar-projeto:hover{
+  background-color: #aaaee4;
+  transition: 0.3s;
+  border: solid 1px;
+  border-color: #aaaee4;
+  color:#132A57;
+}
+/*----------AQUI ACABA A VERSAO ALTERNATIVA.---------*/
+
+/*AQUI COMECA O CODIGO DE "BOTAO" QUANDO LOGADO NO SISTEMA---------*/
+.botao-criar-novo-time:hover{
+  background-color: #aaaee4;
+  transition: 0.3s;
+  border: solid 1px;
+  border-color: #aaaee4;
+  color:#132A57;
+}
+
+/*--------------------PÁGINA DE NOTIFICAÇÕES---------------*/
+
+/* Algumas classes foram importadas das classes da página Projetos (tbm criadas por mim), por isso não estarão aqui (Thomaz)*/
+
+.field-especial-para-textos-grandes{
+  text-align: center;
+  width: 250px;
+  height: 300px;
+}
 
  #team_id{
    margin-left: 10px;

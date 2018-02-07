@@ -1,15 +1,6 @@
 class NotificationsController < ApplicationController
   before_action :set_notification, only: [:show, :edit, :update, :destroy]
-
-  def list
-  #  @notifications.  = current_user
-  #  @user.team_id = params[:team_id]
-  #  @user.save
-  #  redirect_to show_user_path(id: @user.id)    
-  end
-
-
-
+  before_action :user_nao_logado, except: [:new, :create]
 
 
   # GET /notifications
@@ -21,25 +12,32 @@ class NotificationsController < ApplicationController
   # GET /notifications/1
   # GET /notifications/1.json
   def show
-    @user = @user.name
+    #@user = @user.name
+    @users = User.all
+    #@user_notification = User_notification.all
   end
 
   # GET /notifications/new
   def new
     @notification = Notification.new
+    @users = User.all
   end
 
   # GET /notifications/1/edit
   def edit
+
   end
 
   # POST /notifications
   # POST /notifications.json
   def create
     @notification = Notification.new(notification_params)
-
     respond_to do |format|
       if @notification.save
+        @user_notification = UserNotification.new
+        @user_notification.user_id = params[:user_id]
+        @user_notification.id = Notification.last.id
+        @user_notification.save
         format.html { redirect_to @notification, notice: 'Notification was successfully created.' }
         format.json { render :show, status: :created, location: @notification }
       else
@@ -81,6 +79,7 @@ class NotificationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def notification_params
-      params.require(:notification).permit(:name_notification, :text, :date_send)
+      params.require(:notification).permit(:name_notification, :text, :date_send, :user_id)
     end
+
 end

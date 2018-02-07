@@ -1,5 +1,7 @@
 class ProgressProjectsController < ApplicationController
   before_action :set_progress_project, only: [:show, :edit, :update, :destroy]
+  before_action :user_nao_logado, except: [:new, :create]
+
 
   # GET /progress_projects
   # GET /progress_projects.json
@@ -71,4 +73,6 @@ class ProgressProjectsController < ApplicationController
     def progress_project_params
       params.require(:progress_project).permit(:origin_unity, :destiny_unity, :information, :date_send, :project_id)
     end
+
+
 end

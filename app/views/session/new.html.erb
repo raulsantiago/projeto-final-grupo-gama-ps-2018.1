@@ -1,18 +1,17 @@
 <%= form_for :session, url: :login do |form| %>
 
-
 <div class="logo-login">
 <%= link_to index_user_path do %>
   <%= image_tag("logo_header.png")%>
-  
+
 <% end %>
 
 </div>
 <h1 class="titulo-login">Faça seu Login</h1>
   <section id ="login">
-      
+
     <div class= "box-login">
-      
+
       <h2>Email (@injunior.com.br): </h2>
       <%= form.email_field :email, class: "input-login", id: "login" %>
 
@@ -26,4 +25,3 @@
 </section>
 
 <% end %>
-
