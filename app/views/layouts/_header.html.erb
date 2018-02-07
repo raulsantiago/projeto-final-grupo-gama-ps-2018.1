@@ -11,11 +11,14 @@
             <span></span>
             <ul id="menu">
             <li class="opt-menu"><%= link_to "Perfil", show_user_path(id: current_user.id) %></li>
-            <li class="opt-menu"><%= link_to "Projetos", "/projects" %></li>
             <li class="opt-menu"><%= link_to "Membros", index_user_path %></li>
+            <li class="opt-menu"><%= link_to "Cargos", "/offices" %></li>
+            <li class="opt-menu"><%= link_to "Setor", "/unities" %></li>
             <li class="opt-menu"><%= link_to "Times", "/teams" %></li>
+            <li class="opt-menu"><%= link_to "Projetos", "/projects" %></li>
             <li class="opt-menu"><%= link_to "Diretoria", index_user_path %></li>
             <li class="opt-menu"><%= link_to "Metas", "/goal_ints" %></li>
+            <li class="opt-menu"><%= link_to "Notificação", "/notifications" %></li>
             <li class="botao-logout"><%= link_to "Logout", logout_path, method: :delete %></li>
             </ul>
           </div>

@@ -1,3 +1,6 @@
 $('#tabela-membros').DataTable({
-    responsive: true
+    responsive: true,
+    paging: false,
+    "searching": false,
+    info: false
   });

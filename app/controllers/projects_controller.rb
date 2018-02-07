@@ -12,15 +12,18 @@ class ProjectsController < ApplicationController
   # GET /projects/1
   # GET /projects/1.json
   def show
-    @tasks = Tasks.all
-    @progress_projects = Progress_projects.all
-    @unities = Unities.all
-    @users = Users.all
+    #@tasks = Tasks.all
+    #@progress_projects = Progress_projects.all
+    #@unities = Unities.all
+    @users = User.all
+    @teams = Team.all
   end
 
   # GET /projects/new
   def new
     @project = Project.new
+    @user = User.new
+    @team = Team.new
   end
 
   # GET /projects/1/edit

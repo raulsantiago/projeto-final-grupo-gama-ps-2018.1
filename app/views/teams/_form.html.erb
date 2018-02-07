@@ -2,7 +2,7 @@
 
   <% if team.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(team.errors.count, "error") %> prohibited this team from being saved:</h2>
+      <h2><%= pluralize(team.errors.count, "error") %> Não foi possível salvar o time</h2>
 
       <ul>
       <% team.errors.full_messages.each do |message| %>
@@ -12,12 +12,16 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name_team %>
-    <%= form.text_field :name_team, id: :team_name_team %>
+<div class="container-criar-time">
+  <div class="field-criar-times">
+    <%= form.label "nome do time" %>
+    <%= form.text_field :name_team, :class => "criar-time-input" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div>
+  <%= form.submit "Criar time", :class => "actions-criar-times" %>
   </div>
+  <%= link_to 'Mostrar', @team, class:"botao-mostrar-editar-time" %>
+  <%= link_to 'Voltar', teams_path, class:"botao-voltar-criar-time" %>
+</div>
 <% end %>

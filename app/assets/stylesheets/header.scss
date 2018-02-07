@@ -1,7 +1,7 @@
 .header {
     top: 0;
     height: 70px;
-    width: 100%;   
+    width: 100%;
     background-color: #3b3939;
     position: relative;
     padding: 20px;
@@ -12,10 +12,9 @@
 
   float: left;
   height: 60px;
-  margin-left: 50px;  
-
+  margin-left: 50px;
   }
-  
+
 .opt-menu
 {
   font-family: "Avenir Next", "Avenir", sans-serif;
@@ -43,9 +42,9 @@
   position: absolute;
   top: 50px;
   right: 120px;
-  
+
   z-index: 1;
-  
+
   -webkit-user-select: none;
   user-select: none;
 }
@@ -58,12 +57,12 @@
   position: absolute;
   top: -7px;
   left: -5px;
-  
+
   cursor: pointer;
-  
+
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
-  
+
   -webkit-touch-callout: none;
 }
 
@@ -75,15 +74,15 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
+
   background: #cdcdcd;
-  
+
   border-radius: 3px;
-  
+
   z-index: 1;
-  
+
   transform-origin: 4px 0px;
-  
+
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
@@ -131,15 +130,15 @@
   padding-top: 125px;
   right: -100px;
   border-radius: 3px;
-  
+
   background: #ededed;
   list-style-type: none;
-  
+
   -webkit-font-smoothing: antialiased;
-  
+
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
-  
+
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
