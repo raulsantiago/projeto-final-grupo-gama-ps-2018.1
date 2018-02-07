@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180205011914) do
+ActiveRecord::Schema.define(version: 20180207005021) do
 
   create_table "goal_floats", force: :cascade do |t|
     t.string "name_goal_float"

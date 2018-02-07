@@ -9,8 +9,8 @@
         <th>Nome do Projeto</th>
         <th>Data de Prazo</th>
         <th>Data de conclusão</th>
-        <th>Time</th>
-        <th>Usuário</th>
+        <th>Time Responsável</th>
+        <th>PMO Responsável</th>
       </tr>
     </thead>
 
@@ -20,8 +20,8 @@
           <td><%= project.name_project %></td>
           <td><%= project.date_term %></td>
           <td><%= project.date_completed %></td>
-          <td><%= project.team %></td>
-          <td><%= project.user %></td>
+          <td><%= project.team.name_team %></td>
+          <td><%= project.user.name %></td>
           <td><%= link_to 'Show', project %></td>
           <td><%= link_to 'Edit', edit_project_path(project) %></td>
           <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>

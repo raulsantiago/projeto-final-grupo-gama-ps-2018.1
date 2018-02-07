@@ -16,12 +16,12 @@
 
 <p>
   <strong>Team:</strong>
-  <%= @project.team %>
+  <%= @project.team.name_team %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @project.user %>
+  <%= @project.user.name %>
 </p>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |

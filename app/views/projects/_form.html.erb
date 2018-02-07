@@ -27,13 +27,15 @@
     </div>
 
     <div class="field-novo-projeto">
-      <%= form.label "Time:" %>
-      <%= form.text_field :team_id, id: :project_team_id %>
-    </div>
+      <%= form.label "Time"%>
+      <%= select("project", "team_id", Team.all.collect {|team| [ team.name_team,
+        team.id ] }, id: :team) %>
+      </div>
 
     <div class="field-novo-projeto">
-      <%= form.label "Usuário:" %>
-      <%= form.text_field :user_id, id: :project_user_id %>
+      <%= form.label "PMO"%>
+      <%= select("project", "user_id", User.all.collect {|user| [ user.name,
+        user.id ] }, id: :user) %>
     </div>
 
       <%= form.submit "Criar projeto", :class=> "botao-criar-novo-projeto" %>
