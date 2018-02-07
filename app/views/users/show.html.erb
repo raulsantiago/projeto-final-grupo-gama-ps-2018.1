@@ -1,6 +1,6 @@
 <div class="container-show">
 
-      <p id="notice"><%= notice %></p>
+      
       <p class="nome-show">
         <strong class="noheight: 130px;me-show-titulo">Nome:</strong><br>
         <div class="nome-show-usuario"><%= @user.name%></div>
@@ -24,7 +24,7 @@
       <hr class= "lh-show"></hr>
       <p class="titulo-time-show">Time:</p>
       <% if @user.team_id != nil %>
-        <p><%= @user.team.name_team %></p>
+        <p class="time-usuario-show"><%= @user.team.name_team %></p>
         <hr class= "lh-show"></hr>
       <% end %>
 

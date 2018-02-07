@@ -1,25 +1,20 @@
-<<<<<<< HEAD
-<p id="notice"><%= notice %></p>
-=======
 
-
->>>>>>> 65603ff4c6f4b972193904df75c7b30937d6aaed
-<p>
-  <strong>Nome do Time:</strong>
+<p class="ttitulo-time-show-times">
+  <h1 class="titulo-time-show-times">Nome do Time:</h1>
   <%= @team.name_team %>
 </p>
-<<<<<<< HEAD
+<div class="contanier-time-show">
 <p>
+
 <% @users.each do |user| %>
 <% if user.team_id == @team.id %>
   <p><%= user.name %></p><br>
 <% end %>
 <% end %>
 </p>
-<%= link_to 'Edit', edit_team_path(@team) %> |
-<%= link_to 'Back', teams_path %>
-=======
+</div>
+<%= link_to 'Editar', edit_team_path(@team), class:"botao-index-delete-times" %> |
+<%= link_to 'Voltar', teams_path, class:"botao-index-delete-times" %>
 
-<%= link_to 'Editar', edit_team_path(@team) %> |
-<%= link_to 'Voltar', teams_path %>
->>>>>>> 65603ff4c6f4b972193904df75c7b30937d6aaed
+
+

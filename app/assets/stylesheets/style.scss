@@ -1,7 +1,5 @@
 //<%= render 'layouts/header' %>
-*{
-  margin: 0;
-}
+
 /*---------------------FONTES----------------*/
  @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
  @import url('https://fonts.googleapis.com/css?family=Ubuntu');
@@ -435,3 +433,27 @@ font-size: 25px;
  #team_id{
    margin-left: 10px;
  }
+ .titulo-time-show-time{
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 30px;
+
+}
+
+.ttitulo-time-show-times{
+  text-align: center;
+  display: block;
+}
+.contanier-time-show{
+
+  padding: 20px;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color: #838485;
+    box-shadow: 3px 3px 3px black;
+    background: #c2b8b8;
+    width: 20% !important; /*Importante manter o !important rs */
+    margin: auto;
+    
+}
